@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <!-- Primary SEO Metadata -->
-    <title>Elements Jarabacoa | Apartamentos Eco-Luxury en la Montaña | Alveare</title>
-    <meta name="description" content="Apartamentos exclusivos de 1, 2 y 3 habitaciones en preventa en Jamaca de Dios, Jarabacoa, RD. Alta rentabilidad, vistas a la montaña y lujo. Contacta a Alveare Realty." />
-    <meta name="keywords" content="apartamentos en jarabacoa, elements jarabacoa, jamaca de dios jarabacoa, preventa jarabacoa, apartamentos en venta jarabacoa, alveare realty, inversion inmobiliaria la vega, apartamentos turisticos jarabacoa" />
+    <title>Elements Jarabacoa | Apartamentos de Lujo & Lofts en Jamaca de Dios | Alveare</title>
+    <meta name="description" content="Invierta en Elements Jarabacoa: Apartamentos de 1 y 2 habitaciones con línea blanca Whirlpool incluida, 8 piscinas climatizadas y retorno hotelero en la montaña. Reserva con Howard Luna." />
+    <meta name="keywords" content="elements jarabacoa, apartamentos en jarabacoa, lofts jarabacoa, jamaca de dios, alveare realty, apartamentos con linea blanca jarabacoa, inversion jarabacoa airbnb, proyectos turisticos la vega" />
     <link rel="canonical" href="https://elementsjarabacoa.com.do/" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 
@@ -19,23 +19,85 @@
 
     <!-- OpenGraph Metadata (WhatsApp, Facebook, LinkedIn 1200x630) -->
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Alveare Realty" />
-    <meta property="og:title" content="Elements Jarabacoa | Apartamentos Eco-Luxury en la Montaña" />
-    <meta property="og:description" content="Invierte en Elements Jarabacoa: Lujo, rentabilidad y naturaleza en Jamaca de Dios. Unidades de 1, 2 y 3 habitaciones de alto retorno." />
+    <meta property="og:site_name" content="Elements Jarabacoa • Alveare Realty" />
+    <meta property="og:title" content="Elements Jarabacoa | Lofts Exclusivos en el Paraíso Montañoso" />
+    <meta property="og:description" content="Descubre la oportunidad de inversión inmobiliaria de lujo en Jarabacoa. 1 y 2 habs. con línea blanca completa, 8 piscinas climatizadas, fire pits y administración hotelera." />
     <meta property="og:url" content="https://elementsjarabacoa.com.do/" />
-    <meta property="og:image" content="https://elementsjarabacoa.com.do/images/elements-og.jpg" />
-    <meta property="og:image:secure_url" content="https://elementsjarabacoa.com.do/images/elements-og.jpg" />
+    <meta property="og:image" content="https://elementsjarabacoa.com.do/images/canva/ba3ab011bd824773e062d90d3229938e.jpg" />
+    <meta property="og:image:secure_url" content="https://elementsjarabacoa.com.do/images/canva/ba3ab011bd824773e062d90d3229938e.jpg" />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Render de Apartamentos Elements Jarabacoa República Dominicana" />
+    <meta property="og:image:alt" content="Piscina y Vistas de Elements Jarabacoa República Dominicana" />
     <meta property="og:locale" content="es_DO" />
 
     <!-- Twitter Card Metadata -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Elements Jarabacoa | Apartamentos Eco-Luxury en la Montaña" />
-    <meta name="twitter:description" content="Apartamentos exclusivos en Jamaca de Dios, Jarabacoa. Alta rentabilidad turística con Alveare Realty." />
-    <meta name="twitter:image" content="https://elementsjarabacoa.com.do/images/elements-og.jpg" />
+    <meta name="twitter:title" content="Elements Jarabacoa | Lofts Exclusivos en Jarabacoa" />
+    <meta name="twitter:description" content="Apartamentos de lujo con línea blanca incluida y administración hotelera en Jarabacoa. Contacta a Howard Luna." />
+    <meta name="twitter:image" content="https://elementsjarabacoa.com.do/images/canva/ba3ab011bd824773e062d90d3229938e.jpg" />
+
+    <!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Cinzel:wght@500;700;800;900&display=swap" rel="stylesheet" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+              serif: ['"Cinzel"', 'serif'],
+            },
+            colors: {
+              elements: {
+                dark: '#0a100d',
+                pine: '#13241b',
+                card: '#16281e',
+                border: '#244031',
+                gold: '#d4af37',
+                accent: '#e6c875',
+              }
+            }
+          }
+        }
+      }
+    </script>
+
+    <style>
+      body {
+        background-color: #080d0b;
+        color: #e5ece8;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+      .font-cinzel {
+        font-family: 'Cinzel', serif;
+      }
+      .gold-gradient-text {
+        background: linear-gradient(135deg, #f5d77f 0%, #d4af37 50%, #aa8010 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .gold-gradient-bg {
+        background: linear-gradient(135deg, #f5d77f 0%, #d4af37 50%, #aa8010 100%);
+      }
+      .glass-pine {
+        background: rgba(19, 36, 27, 0.7);
+        backdrop-filter: blur(16px);
+        border: 1px solid rgba(212, 175, 55, 0.18);
+      }
+      .glass-card {
+        background: rgba(14, 25, 19, 0.85);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(36, 64, 49, 0.7);
+      }
+      .glass-card:hover {
+        border-color: rgba(212, 175, 55, 0.4);
+      }
+    </style>
 
     <!-- Structured Data: Schema.org Multi-Entity Graph (JSON-LD) -->
     <script type="application/ld+json">
@@ -46,13 +108,15 @@
           "@type": ["ApartmentComplex", "RealEstateAgent"],
           "@id": "https://elementsjarabacoa.com.do/#project",
           "name": "Elements Jarabacoa",
-          "alternateName": ["Elements Jarabacoa Eco-Luxury", "Apartamentos Elements Jarabacoa"],
+          "alternateName": ["Lofts Exclusivos Elements Jarabacoa", "Elements Jarabacoa Lofts"],
           "url": "https://elementsjarabacoa.com.do/",
-          "logo": "https://elementsjarabacoa.com.do/images/elements-og.jpg",
+          "logo": "https://elementsjarabacoa.com.do/images/canva/805eb3cf327d40d659aef315e9a41202.png",
           "image": [
-            "https://elementsjarabacoa.com.do/images/elements-og.jpg"
+            "https://elementsjarabacoa.com.do/images/canva/ba3ab011bd824773e062d90d3229938e.jpg",
+            "https://elementsjarabacoa.com.do/images/canva/4621c6bfa2ece50e095024c896ac94cc.jpg",
+            "https://elementsjarabacoa.com.do/images/canva/8d1280b0f04cd46c7a85ce450c7f87c5.jpg"
           ],
-          "description": "Exclusivo proyecto de apartamentos eco-luxury de 1, 2 y 3 habitaciones ubicado en Jamaca de Dios, Jarabacoa, La Vega, República Dominicana. Vistas panorámicas a la montaña y óptima rentabilidad turística.",
+          "description": "Exclusivo complejo de apartamentos y lofts de lujo en Jarabacoa. 1 y 2 habitaciones con línea blanca Whirlpool incluida, 8 piscinas climatizadas, fire pits, canchas de tenis y administración hotelera de alto retorno pasivo.",
           "telephone": "+1-829-455-4783",
           "priceRange": "$$$",
           "address": {
@@ -71,54 +135,28 @@
           "openingHoursSpecification": [
             {
               "@type": "OpeningHoursSpecification",
-              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
               "opens": "09:00",
-              "closes": "18:00"
+              "closes": "21:00"
             },
             {
               "@type": "OpeningHoursSpecification",
-              "dayOfWeek": ["Saturday"],
-              "opens": "09:00",
-              "closes": "13:00"
+              "dayOfWeek": ["Friday"],
+              "opens": "09:30",
+              "closes": "18:00"
             }
           ],
           "amenityFeature": [
-            { "@type": "LocationFeatureSpecification", "name": "Vistas Panorámicas a la Montaña", "value": true },
-            { "@type": "LocationFeatureSpecification", "name": "Jacuzzi Climatizado", "value": true },
-            { "@type": "LocationFeatureSpecification", "name": "Área de Fogata (Fire Pit)", "value": true },
-            { "@type": "LocationFeatureSpecification", "name": "Seguridad 24/7 y Control de Acceso", "value": true },
-            { "@type": "LocationFeatureSpecification", "name": "Senderos Ecológicos", "value": true }
-          ],
-          "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Catálogo de Apartamentos Elements Jarabacoa",
-            "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Apartment",
-                  "name": "Apartamento 1 Habitación Eco-Suite",
-                  "description": "Unidad de 1 habitación ideal para inversión y rentas cortas vía Airbnb en Jarabacoa."
-                }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Apartment",
-                  "name": "Apartamento 2 Habitaciones Mountain View",
-                  "description": "Unidad familiar con terraza privada y vistas abiertas a la cordillera central."
-                }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Apartment",
-                  "name": "Penthouse 3 Habitaciones Luxury Vista",
-                  "description": "Penthouse exclusivo de 3 habitaciones con doble altura y terraza privada."
-                }
-              }
-            ]
-          }
+            { "@type": "LocationFeatureSpecification", "name": "8 Piscinas Climatizadas", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "4 Fogatas (Fire Pits) y 7 Pérgolas con BBQ", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Canchas de Tenis y Área de Juegos con Billar y Bar", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Línea Blanca Completa Whirlpool Incluida", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Administración de Alquiler Hotelera con Retorno Asegurado", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Ascensor en Todos los Edificios", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Cargadores de Vehículos Eléctricos", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Garita de Seguridad 24/7", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Paneles Solares para Áreas Comunes", "value": true }
+          ]
         },
         {
           "@type": "FAQPage",
@@ -126,26 +164,26 @@
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "¿Dónde está ubicado el proyecto Elements Jarabacoa?",
+              "name": "¿Qué incluye la Línea Blanca de Elements Jarabacoa?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Está ubicado en el prestigioso sector Jamaca de Dios en Jarabacoa, La Vega, República Dominicana."
+                "text": "Todos los apartamentos incluyen línea blanca completa marca Whirlpool: cerraduras eléctricas wireless, nevera, microondas/extractor, estufa, lavadora/secadora, calentador de gas de línea y aires acondicionados en las habitaciones."
               }
             },
             {
               "@type": "Question",
-              "name": "¿Qué tipologías de apartamentos están disponibles?",
+              "name": "¿Cómo funciona el modelo de administración de rentas hotelera?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Disponemos de unidades de 1, 2 y 3 habitaciones con terrazas y acabados eco-luxury."
+                "text": "Es un modelo 100% ecológico con administración hotelera llave en mano: disfrutas de tu apartamento cuando lo desees y generas ingresos pasivos significativos en rentas vacacionales sin tener que encargarte de la logística."
               }
             },
             {
               "@type": "Question",
-              "name": "¿Cómo puedo recibir el catálogo y plan de pago?",
+              "name": "¿A qué distancia está Elements Jarabacoa de los principales puntos turísticos?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Puedes contactar a nuestro asesor inmobiliario oficial por WhatsApp al +1 (829) 455-4783 para recibir el folleto completo y lista de precios."
+                "text": "Restaurante Jamaca de Dios a 6 mins, Eco Parapentes RD a 4 mins, Café Colao a 7 mins, Salto de Baiguate a 9 mins y Río Yaque del Norte a 12 mins."
               }
             }
           ]
@@ -153,195 +191,505 @@
       ]
     }
     </script>
-
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              brand: {
-                green: '#1a4731',
-                gold: '#c5a059',
-                dark: '#0d1512'
-              }
-            }
-          }
-        }
-      }
-    </script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800;900&display=swap" rel="stylesheet" />
-    <style>
-      body {
-        font-family: 'Plus Jakarta Sans', sans-serif;
-        background-color: #0b110e;
-        color: #e2e8f0;
-      }
-    </style>
   </head>
   <body class="selection:bg-amber-500 selection:text-black">
-    
-    <!-- Top Bar -->
-    <header class="sticky top-0 z-50 backdrop-blur-md bg-[#0b110e]/85 border-b border-emerald-900/30">
+
+    <!-- Top Navigation Bar -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-pine border-b border-amber-500/20 transition-all duration-300">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-        <a href="/" class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-800 to-amber-600 flex items-center justify-center text-white font-black text-xl shadow-lg shadow-emerald-950/50">
-            E
-          </div>
-          <div>
-            <span class="text-xl font-black text-white tracking-wider block">ELEMENTS</span>
-            <span class="text-[10px] tracking-widest text-amber-400 font-mono block -mt-1 uppercase">Jarabacoa • Eco-Luxury</span>
+        
+        <!-- Logo Oficial Canva Extraído -->
+        <a href="/" class="flex items-center gap-3 group">
+          <img src="/images/canva/805eb3cf327d40d659aef315e9a41202.png" 
+               alt="Elements Jarabacoa Logo" 
+               class="h-12 w-auto object-contain drop-shadow group-hover:scale-105 transition-transform" />
+          <div class="flex flex-col">
+            <span class="font-cinzel text-lg sm:text-xl font-bold tracking-widest text-white leading-none">ELEMENTS</span>
+            <span class="text-[10px] tracking-[0.25em] text-amber-300 font-mono mt-1 uppercase">Jarabacoa • Lofts de Lujo</span>
           </div>
         </a>
 
-        <div class="flex items-center gap-4">
+        <!-- Enlaces Rápidos -->
+        <nav class="hidden md:flex items-center gap-7 text-xs font-semibold tracking-wider text-slate-300 uppercase">
+          <a href="#inversion" class="hover:text-amber-300 transition-colors">Inversión</a>
+          <a href="#linea-blanca" class="hover:text-amber-300 transition-colors">Línea Blanca</a>
+          <a href="#amenidades" class="hover:text-amber-300 transition-colors">Amenidades</a>
+          <a href="#ubicacion" class="hover:text-amber-300 transition-colors">Ubicación</a>
+        </nav>
+
+        <!-- CTA Directo WhatsApp -->
+        <div class="flex items-center gap-3">
           <a href="https://wa.me/18294554783?text=Hola%20Howard,%20deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Elements%20Jarabacoa" 
              target="_blank"
-             class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs tracking-wider transition-all shadow-lg shadow-emerald-600/30">
+             rel="noopener noreferrer"
+             class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full gold-gradient-bg text-slate-950 font-black text-xs tracking-wider shadow-lg shadow-amber-500/20 hover:scale-105 active:scale-95 transition-all">
             <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.634.053-1.637-.361-.914-.378-1.571-.977-2.146-1.554-.627-.63-1.144-1.39-1.288-1.944-.163-.628.093-1.042.277-1.233.111-.115.244-.265.367-.384.093-.09.13-.153.195-.286.065-.133.033-.247-.016-.347-.049-.1-.444-1.07-.608-1.465-.16-.385-.323-.332-.444-.338-.114-.006-.245-.008-.376-.008-.13 0-.342.049-.521.244-.179.195-.684.668-.684 1.629s.7 1.888.798 2.019c.098.131 1.378 2.104 3.339 2.951.466.201.83.322 1.114.412.468.149.894.128 1.231.078.375-.056 1.152-.471 1.315-.926.163-.455.163-.845.114-.926-.048-.082-.178-.132-.375-.231zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.662 1.435 5.178L2 22l4.981-1.39A9.96 9.96 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.2c-1.611 0-3.112-.47-4.38-1.281l-.314-.199-2.954.823.834-2.879-.208-.328A8.167 8.167 0 013.8 12c0-4.521 3.679-8.2 8.2-8.2 4.521 0 8.2 3.679 8.2 8.2 0 4.521-3.679 8.2-8.2 8.2z"/></svg>
-            <span>WhatsApp Directo</span>
+            <span class="hidden sm:inline">Quiero Más Información</span>
+            <span class="sm:hidden">Contacto</span>
           </a>
         </div>
       </div>
     </header>
 
-    <!-- Hero Section -->
-    <main>
-      <section class="relative min-h-[85vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 py-20 overflow-hidden">
-        <!-- Background Image with Overlay -->
+    <main class="pt-20">
+
+      <!-- ========================================================
+           HERO SECTION: INVIERTA EN EL PARAÍSO MONTAÑOSO
+           ======================================================== -->
+      <section class="relative min-h-[92vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 py-24 overflow-hidden">
+        <!-- Fotografía Real de Fondo: Complejo en la Montaña -->
         <div class="absolute inset-0 z-0">
-          <img src="/images/elements-og.jpg" alt="Elements Jarabacoa" class="w-full h-full object-cover brightness-[0.35]" />
-          <div class="absolute inset-0 bg-gradient-to-t from-[#0b110e] via-transparent to-black/60"></div>
+          <img src="/images/canva/ec61809d84d7a28f51d3e0abbdf5dc73.jpg" 
+               alt="Elements Jarabacoa Complejo de Apartamentos en la Montaña" 
+               class="w-full h-full object-cover object-center filter brightness-[0.38] contrast-[1.1] scale-105 transform animate-pulse duration-[10000ms]" />
+          <div class="absolute inset-0 bg-gradient-to-t from-[#080d0b] via-[#080d0b]/40 to-transparent"></div>
+          <div class="absolute inset-0 bg-gradient-to-r from-[#080d0b]/80 via-transparent to-[#080d0b]/80"></div>
         </div>
 
-        <div class="relative z-10 max-w-4xl mx-auto text-center space-y-8">
-          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 text-xs font-mono uppercase tracking-widest">
-            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-            Jamaca de Dios • Jarabacoa
+        <div class="relative z-10 max-w-5xl mx-auto text-center space-y-7">
+          <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full glass-pine text-amber-300 text-xs font-mono tracking-widest uppercase border border-amber-500/30">
+            <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
+            Lofts Exclusivos • Jamaca de Dios
           </div>
 
-          <h1 class="text-4xl sm:text-6xl md:text-7xl font-black text-white tracking-tight leading-tight">
-            Lujo, Rentabilidad y Naturaleza en la Montaña
+          <h1 class="font-cinzel text-4xl sm:text-6xl md:text-7xl font-bold text-white tracking-wide leading-tight">
+            ¡Invierta en el Paraíso <br class="hidden sm:inline"/>
+            <span class="gold-gradient-text">Montañoso de Jarabacoa!</span>
           </h1>
 
-          <p class="text-base sm:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed font-light">
-            Apartamentos exclusivos de 1, 2 y 3 habitaciones con vistas panorámicas, alta rentabilidad turística vía Airbnb y clima fresco de montaña todo el año.
+          <p class="text-base sm:text-xl text-slate-200 max-w-3xl mx-auto leading-relaxed font-light">
+            Descubre la oportunidad de inversión inmobiliaria de lujo que estabas esperando. Ubicado en Jarabacoa, un destino turístico de élite conocido por su clima fresco, aire puro y baja contaminación.
           </p>
 
+          <!-- Badges Clave del Hero -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-3xl mx-auto pt-2">
+            <div class="p-3 rounded-2xl glass-card text-center">
+              <span class="text-xs font-bold text-amber-400 block">Aptos. 1 & 2</span>
+              <span class="text-[11px] text-slate-300 font-mono">Habitaciones</span>
+            </div>
+            <div class="p-3 rounded-2xl glass-card text-center">
+              <span class="text-xs font-bold text-amber-400 block">1 & 2 Baños</span>
+              <span class="text-[11px] text-slate-300 font-mono">Acabados de Lujo</span>
+            </div>
+            <div class="p-3 rounded-2xl glass-card text-center">
+              <span class="text-xs font-bold text-amber-400 block">1 & 2 Parqueos</span>
+              <span class="text-[11px] text-slate-300 font-mono">Con Locker</span>
+            </div>
+            <div class="p-3 rounded-2xl glass-card text-center">
+              <span class="text-xs font-bold text-emerald-400 block">Línea Blanca</span>
+              <span class="text-[11px] text-slate-300 font-mono">Whirlpool Incluida</span>
+            </div>
+          </div>
+
+          <!-- CTAs Principales -->
           <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-            <a href="https://wa.me/18294554783?text=Hola%20Howard,%20quiero%20el%20cat%C3%A1logo%20de%20Elements%20Jarabacoa" 
+            <a href="https://wa.me/18294554783?text=Hola%20Howard,%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Elements%20Jarabacoa" 
                target="_blank"
-               class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-emerald-600 via-teal-600 to-amber-600 hover:from-emerald-500 hover:to-amber-500 text-white font-black text-sm uppercase tracking-wider shadow-xl shadow-emerald-900/40 transition-all transform hover:scale-[1.02] flex items-center justify-center gap-2">
-              <span>Solicitar Catálogo & Precios</span>
+               rel="noopener noreferrer"
+               class="w-full sm:w-auto px-9 py-4 rounded-2xl gold-gradient-bg text-slate-950 font-black text-sm tracking-wider uppercase shadow-2xl shadow-amber-500/30 hover:scale-[1.03] active:scale-[0.98] transition-all flex items-center justify-center gap-2">
+              <span>“Quiero Más Información”</span>
               <span>→</span>
             </a>
-            <a href="#tipologias" 
-               class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-slate-900/80 hover:bg-slate-800 text-slate-200 border border-slate-700 font-bold text-sm uppercase tracking-wider transition-all">
-              Ver Tipologías
+            <a href="#linea-blanca" 
+               class="w-full sm:w-auto px-8 py-4 rounded-2xl glass-pine hover:bg-emerald-950/60 text-white font-bold text-sm tracking-wider uppercase transition-all">
+              Ver Características & Equipamiento
             </a>
           </div>
         </div>
       </section>
 
-      <!-- Tipologías -->
-      <section id="tipologias" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- ========================================================
+           SECCIÓN: DISEÑO & REFINAMIENTO INTERIOR
+           ======================================================== -->
+      <section id="inversion" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-emerald-950/40">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-6 space-y-6">
+            <span class="text-xs font-mono text-amber-400 uppercase tracking-widest font-bold">Refugio Personal & Fuente de Ingresos</span>
+            <h2 class="font-cinzel text-3xl sm:text-5xl font-bold text-white leading-tight">
+              Apartamentos de Lujo Diseñados para Inversionistas
+            </h2>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+              Exclusivo complejo de apartamentos de lujo, diseñado para inversionistas que buscan tanto un refugio personal como una fuente de ingresos pasivos.
+            </p>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+              Elements Jarabacoa ofrece apartamentos de 1 y 2 habitaciones, equipados con línea blanca completa marca <strong class="text-white">Whirlpool</strong> y acabados de lujo, incluye cocinas modulares con topes de granito y ventanales de piso a techo. Cada detalle ha sido cuidadosamente seleccionado para maximizar el confort y el estilo.
+            </p>
+
+            <div class="pt-2">
+              <a href="https://wa.me/18294554783?text=Hola%20Howard,%20deseo%20conocer%20los%20detalles%20de%20los%20apartamentos%20en%20Elements%20Jarabacoa" 
+                 target="_blank"
+                 class="inline-flex items-center gap-2 text-amber-300 hover:text-amber-200 font-bold text-sm border-b border-amber-400 pb-1 group transition-colors">
+                <span>Solicitar presentación privada por WhatsApp</span>
+                <span class="group-hover:translate-x-1 transition-transform">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Galería Fotográfica Real: Salas con Vistas Panorámicas -->
+          <div class="lg:col-span-6 grid grid-cols-2 gap-4">
+            <div class="space-y-4">
+              <div class="rounded-3xl overflow-hidden glass-card shadow-2xl h-64 sm:h-72">
+                <img src="/images/canva/66e3871eb1ab6b521e5724990dd17894.jpg" 
+                     alt="Sala con vista panorámica en Elements Jarabacoa" 
+                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              </div>
+              <div class="rounded-3xl overflow-hidden glass-card shadow-2xl h-44 sm:h-52">
+                <img src="/images/canva/2285b177fbb5d5cea36ba3a3fb35dc44.jpg" 
+                     alt="Comedor y ventanales de piso a techo Elements Jarabacoa" 
+                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              </div>
+            </div>
+            <div class="space-y-4 pt-6">
+              <div class="rounded-3xl overflow-hidden glass-card shadow-2xl h-44 sm:h-52">
+                <img src="/images/canva/a9ba0c06665ca64016c1d5aa02a18e13.jpg" 
+                     alt="Diseño contemporáneo en madera y piedra Jarabacoa" 
+                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              </div>
+              <div class="rounded-3xl overflow-hidden glass-card shadow-2xl h-64 sm:h-72">
+                <img src="/images/canva/7cb0e2a9ead1fd6aac017effab4a3418.jpg" 
+                     alt="Vista espectacular hacia la cordillera central" 
+                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ========================================================
+           SECCIÓN: LÍNEA BLANCA WHIRLPOOL INCLUIDA
+           ======================================================== -->
+      <section id="linea-blanca" class="py-24 bg-gradient-to-b from-[#0e1913] to-[#080d0b] border-t border-b border-emerald-950/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <span class="inline-block px-4 py-1 rounded-full text-xs font-mono font-bold text-amber-300 glass-pine border border-amber-500/30 uppercase tracking-widest">
+              Totalmente Equipados
+            </span>
+            <h2 class="font-cinzel text-3xl sm:text-5xl font-bold text-white">
+              “LÍNEA BLANCA INCLUIDA”
+            </h2>
+            <p class="text-sm sm:text-base text-slate-300">
+              Cada apartamento se entrega con equipamiento completo para que disfrutes de tu inversión o comiences a rentar desde el primer día sin gastos adicionales.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <div class="p-6 rounded-3xl glass-card space-y-3">
+              <div class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-2xl text-amber-300">
+                🔒
+              </div>
+              <h3 class="text-lg font-bold text-white">Cerraduras Eléctricas Wireless</h3>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                Control de acceso digital inteligente sin llaves, ideal para el check-in autónomo de huéspedes de Airbnb.
+              </p>
+            </div>
+
+            <div class="p-6 rounded-3xl glass-card space-y-3">
+              <div class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-2xl text-amber-300">
+                ❄️
+              </div>
+              <h3 class="text-lg font-bold text-white">Nevera & Microondas Whirlpool</h3>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                Electrodomésticos de acero inoxidable de alta gama con extractor integrado en cocina modular.
+              </p>
+            </div>
+
+            <div class="p-6 rounded-3xl glass-card space-y-3">
+              <div class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-2xl text-amber-300">
+                🍳
+              </div>
+              <h3 class="text-lg font-bold text-white">Estufa & Cocina Modular</h3>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                Topes en granito de primera calidad, estufa empotrada y mobiliario optimizado para el espacio.
+              </p>
+            </div>
+
+            <div class="p-6 rounded-3xl glass-card space-y-3">
+              <div class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-2xl text-amber-300">
+                🧺
+              </div>
+              <h3 class="text-lg font-bold text-white">Lavadora / Secadora</h3>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                Torre de lavado en área privada, pensada para la comodidad de estadías de media y larga duración.
+              </p>
+            </div>
+
+            <div class="p-6 rounded-3xl glass-card space-y-3">
+              <div class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-2xl text-amber-300">
+                🔥
+              </div>
+              <h3 class="text-lg font-bold text-white">Calentador de Gas de Línea</h3>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                Suministro constante de agua caliente para duchas y jacuzzi en el clima fresco de la montaña.
+              </p>
+            </div>
+
+            <div class="p-6 rounded-3xl glass-card space-y-3">
+              <div class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-2xl text-amber-300">
+                💨
+              </div>
+              <h3 class="text-lg font-bold text-white">Aires Acondicionados</h3>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                Unidades inverter de bajo consumo instaladas en todas las habitaciones para máximo confort.
+              </p>
+            </div>
+
+          </div>
+
+          <div class="mt-12 text-center">
+            <a href="https://wa.me/18294554783?text=Hola%20Howard,%20quiero%20confirmar%20la%20lista%20de%20equipamiento%20y%20l%C3%ADnea%20blanca%20de%20Elements%20Jarabacoa" 
+               target="_blank"
+               class="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl gold-gradient-bg text-slate-950 font-black text-xs tracking-wider uppercase shadow-xl hover:scale-105 transition-all">
+              <span>Descargar Especificaciones de Equipamiento</span>
+              <span>→</span>
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ========================================================
+           SECCIÓN: RETORNO ASEGURADO & ADMINISTRACIÓN HOTELERA
+           ======================================================== -->
+      <section class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="p-8 sm:p-14 rounded-3xl glass-pine border-2 border-amber-500/30 relative overflow-hidden">
+          
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+            
+            <div class="lg:col-span-7 space-y-6">
+              <span class="text-xs font-mono text-emerald-400 uppercase tracking-widest font-bold">100% Ecológico & Rentable</span>
+              <h2 class="font-cinzel text-3xl sm:text-5xl font-bold text-white leading-tight">
+                Oportunidad de Inversión Estratégica con <span class="gold-gradient-text">Retorno Asegurado</span>
+              </h2>
+              <p class="text-slate-200 text-sm sm:text-base leading-relaxed">
+                100% Ecológico que te ofrece un modelo de administración de alquileres hotelera, permitiéndote generar ingresos significativos cuando no estés utilizando tu propiedad.
+              </p>
+              
+              <div class="p-6 rounded-2xl bg-black/40 border border-amber-500/20 space-y-2">
+                <span class="font-cinzel text-xl font-bold text-amber-300 block">ÚNICO EN SU CLASE</span>
+                <p class="text-sm text-slate-200 italic font-light">
+                  “Donde podrás disfrutar y tenerlo TODO, ¡sin encargarte de TODO!”
+                </p>
+              </div>
+
+              <div class="pt-2">
+                <a href="https://wa.me/18294554783?text=Hola%20Howard,%20deseo%20conocer%20las%20proyecciones%20financieras%20y%20el%20retorno%20de%20inversi%C3%B3n%20en%20Elements%20Jarabacoa" 
+                   target="_blank"
+                   class="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl gold-gradient-bg text-slate-950 font-black text-xs uppercase tracking-wider shadow-lg hover:scale-105 transition-all">
+                  <span>Solicitar Proyección de Rentabilidad</span>
+                  <span>→</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="lg:col-span-5 space-y-4">
+              <div class="rounded-3xl overflow-hidden glass-card shadow-2xl h-64">
+                <img src="/images/canva/d2bcd46e6f658b613c9780c51361c752.jpg" 
+                     alt="Dormitorio principal con ventanales hacia la montaña en Elements Jarabacoa" 
+                     class="w-full h-full object-cover" />
+              </div>
+              <div class="rounded-3xl overflow-hidden glass-card shadow-2xl h-48">
+                <img src="/images/canva/2d953f712583e0b5187db8222cbacc3a.jpg" 
+                     alt="Balcón y terraza privada con vista en Jarabacoa" 
+                     class="w-full h-full object-cover" />
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ========================================================
+           SECCIÓN: AMENIDADES DE LUJO
+           ======================================================== -->
+      <section id="amenidades" class="py-24 bg-[#080d0b] border-t border-emerald-950/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+          
+          <div class="text-center max-w-2xl mx-auto space-y-3">
+            <span class="text-xs font-mono text-amber-400 uppercase tracking-widest font-bold">Experiencia de Resort</span>
+            <h2 class="font-cinzel text-3xl sm:text-5xl font-bold text-white">AMENIDADES DE LUJO</h2>
+            <p class="text-sm text-slate-400">Cada espacio pensado para el disfrute, descanso y esparcimiento en la montaña.</p>
+          </div>
+
+          <!-- Grid de Amenidades Oficiales Extraídas de Canva -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <div class="p-7 rounded-3xl glass-card space-y-4">
+              <div class="h-44 rounded-2xl overflow-hidden">
+                <img src="/images/canva/ba3ab011bd824773e062d90d3229938e.jpg" 
+                     alt="Piscinas climatizadas en Elements Jarabacoa" 
+                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              </div>
+              <h3 class="text-lg font-bold text-white">8 Piscinas Climatizadas</h3>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                Distribuidas a lo largo del complejo para garantizar privacidad y confort en cualquier época del año.
+              </p>
+            </div>
+
+            <div class="p-7 rounded-3xl glass-card space-y-4">
+              <div class="h-44 rounded-2xl overflow-hidden">
+                <img src="/images/canva/4621c6bfa2ece50e095024c896ac94cc.jpg" 
+                     alt="Fogatas y Pérgolas BBQ Elements Jarabacoa" 
+                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              </div>
+              <h3 class="text-lg font-bold text-white">4 Fogatas (Fire Pits) & 7 Pérgolas con BBQ</h3>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                Zonas de fogata para las noches frescas de Jarabacoa y áreas de asado completamente equipadas.
+              </p>
+            </div>
+
+            <div class="p-7 rounded-3xl glass-card space-y-4">
+              <div class="h-44 rounded-2xl overflow-hidden">
+                <img src="/images/canva/019378ef94c8e5b15340cd929b748771.jpg" 
+                     alt="Canchas de tenis y bar Elements Jarabacoa" 
+                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+              </div>
+              <h3 class="text-lg font-bold text-white">Canchas de Tenis, Billar & Bar Social</h3>
+              <p class="text-xs text-slate-400 leading-relaxed">
+                Área deportiva y lounge social con mesas de billar y bar para compartir entre propietarios y huéspedes.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Lista de Servicios Adicionales Extraídos -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pt-4">
+            <div class="p-4 rounded-2xl glass-pine flex items-center gap-3">
+              <span class="text-amber-400 text-lg">⚡</span>
+              <span class="text-xs font-semibold text-white">Cargadores de Vehículos Eléctricos</span>
+            </div>
+            <div class="p-4 rounded-2xl glass-pine flex items-center gap-3">
+              <span class="text-amber-400 text-lg">♨️</span>
+              <span class="text-xs font-semibold text-white">Jacuzzi &/o Kitchenette en Terraza (Opcional)</span>
+            </div>
+            <div class="p-4 rounded-2xl glass-pine flex items-center gap-3">
+              <span class="text-amber-400 text-lg">🛗</span>
+              <span class="text-xs font-semibold text-white">Ascensor en Todos los Edificios</span>
+            </div>
+            <div class="p-4 rounded-2xl glass-pine flex items-center gap-3">
+              <span class="text-amber-400 text-lg">🚴</span>
+              <span class="text-xs font-semibold text-white">Bicicletas con Senderos Prediseñados</span>
+            </div>
+            <div class="p-4 rounded-2xl glass-pine flex items-center gap-3">
+              <span class="text-amber-400 text-lg">🛒</span>
+              <span class="text-xs font-semibold text-white">Mini-Market dentro del Complejo</span>
+            </div>
+            <div class="p-4 rounded-2xl glass-pine flex items-center gap-3">
+              <span class="text-amber-400 text-lg">☀️</span>
+              <span class="text-xs font-semibold text-white">Paneles Solares para Áreas Comunes</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ========================================================
+           SECCIÓN: UBICACIÓN PRIVILEGIADA & DISTANCIAS REALES
+           ======================================================== -->
+      <section id="ubicacion" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-emerald-950/40">
         <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
-          <span class="text-xs font-mono text-amber-400 uppercase tracking-widest">Inversión Inteligente</span>
-          <h2 class="text-3xl sm:text-5xl font-black text-white">Tipologías Residenciales</h2>
-          <p class="text-sm text-slate-400">Diseñadas para maximizar el confort y el rendimiento en rentas vacacionales.</p>
+          <span class="text-xs font-mono text-amber-400 uppercase tracking-widest font-bold">Jamaca de Dios • Jarabacoa</span>
+          <h2 class="font-cinzel text-3xl sm:text-5xl font-bold text-white">UBICACIÓN PRIVILEGIADA</h2>
+          <p class="text-sm text-slate-400">A minutos de los principales restaurantes, ríos y atractivos turísticos de La Vega.</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- 1 Habitación -->
-          <div class="p-8 rounded-3xl bg-[#121b16] border border-emerald-900/40 hover:border-amber-500/50 transition-all space-y-5">
-            <span class="px-3 py-1 rounded-full text-[11px] font-mono bg-emerald-950 text-emerald-400 border border-emerald-800">Ideal Airbnb</span>
-            <h3 class="text-2xl font-black text-white">Eco-Suite (1 Habitación)</h3>
-            <p class="text-xs text-slate-400 leading-relaxed">
-              Optimizada para parejas y turistas de montaña. Sala, cocina integrada, terraza con vista y jacuzzi opcional.
-            </p>
-            <ul class="text-xs text-slate-300 space-y-2 border-t border-emerald-900/30 pt-4">
-              <li>✓ Alta tasa de ocupación anual</li>
-              <li>✓ Totalmente equipable para rentas cortas</li>
-              <li>✓ 1 Parqueo asignado</li>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          <!-- Gastronomía & Servicios -->
+          <div class="p-8 rounded-3xl glass-card space-y-5">
+            <h3 class="font-cinzel text-xl font-bold text-amber-300">Gastronomía & Entretenimiento</h3>
+            <ul class="space-y-3 text-xs sm:text-sm text-slate-300 divide-y divide-emerald-950/60">
+              <li class="pt-2 flex justify-between"><span>Eco Parapentes RD</span> <strong class="text-amber-400 font-mono">4 Mins.</strong></li>
+              <li class="pt-2 flex justify-between"><span>Restaurante Jamaca de Dios</span> <strong class="text-amber-400 font-mono">6 Mins.</strong></li>
+              <li class="pt-2 flex justify-between"><span>Café Colao</span> <strong class="text-amber-400 font-mono">7 Mins.</strong></li>
+              <li class="pt-2 flex justify-between"><span>El Fresco Restaurant</span> <strong class="text-amber-400 font-mono">7 Mins.</strong></li>
+              <li class="pt-2 flex justify-between"><span>Helados Ivón</span> <strong class="text-amber-400 font-mono">7 Mins.</strong></li>
+              <li class="pt-2 flex justify-between"><span>La Tinaja</span> <strong class="text-amber-400 font-mono">10 Mins.</strong></li>
+              <li class="pt-2 flex justify-between"><span>Jarabacoa Golf Club</span> <strong class="text-amber-400 font-mono">19 Mins.</strong></li>
+              <li class="pt-2 flex justify-between"><span>Ribera Country Club</span> <strong class="text-amber-400 font-mono">24 Mins.</strong></li>
             </ul>
-            <a href="https://wa.me/18294554783?text=Quiero%20cotizar%20la%20Eco-Suite%20de%201%20hab%20en%20Elements%20Jarabacoa" 
-               target="_blank"
-               class="block text-center w-full py-3 rounded-xl bg-emerald-800/40 hover:bg-emerald-700/60 text-emerald-300 font-bold text-xs transition-colors">
-              Cotizar 1 Habitación
-            </a>
           </div>
 
-          <!-- 2 Habitaciones -->
-          <div class="p-8 rounded-3xl bg-[#14201a] border-2 border-amber-500/40 hover:border-amber-400 transition-all space-y-5 relative shadow-xl">
-            <span class="px-3 py-1 rounded-full text-[11px] font-mono bg-amber-950 text-amber-300 border border-amber-800">Más Solicitada</span>
-            <h3 class="text-2xl font-black text-white">Mountain View (2 Habitaciones)</h3>
-            <p class="text-xs text-slate-300 leading-relaxed">
-              Espacio familiar de montaña. 2 baños completos, amplia terraza social con vista panorámica y acabados en madera y piedra.
-            </p>
-            <ul class="text-xs text-slate-300 space-y-2 border-t border-emerald-900/30 pt-4">
-              <li>✓ Confort familiar y retiro privado</li>
-              <li>✓ Chimenea y terraza panorámica</li>
-              <li>✓ 2 Parqueos asignados</li>
+          <!-- Naturaleza & Aventura -->
+          <div class="p-8 rounded-3xl glass-card space-y-5">
+            <h3 class="font-cinzel text-xl font-bold text-amber-300">Naturaleza & Ecoturismo</h3>
+            <ul class="space-y-3 text-xs sm:text-sm text-slate-300 divide-y divide-emerald-950/60">
+              <li class="pt-2 flex justify-between"><span>Salto de Baiguate</span> <strong class="text-emerald-400 font-mono">9 Mins.</strong></li>
+              <li class="pt-2 flex justify-between"><span>Jarabacoa Eco Adventures</span> <strong class="text-emerald-400 font-mono">10 Mins.</strong></li>
+              <li class="pt-2 flex justify-between"><span>Río Yaque del Norte</span> <strong class="text-emerald-400 font-mono">12 Mins.</strong></li>
+              <li class="pt-2 flex justify-between"><span>Salto Los Monjes</span> <strong class="text-emerald-400 font-mono">12 Mins.</strong></li>
+              <li class="pt-2 flex justify-between"><span>La Confluencia</span> <strong class="text-emerald-400 font-mono">13 Mins.</strong></li>
+              <li class="pt-2 flex justify-between"><span>Las Guázaras</span> <strong class="text-emerald-400 font-mono">13 Mins.</strong></li>
+              <li class="pt-2 flex justify-between"><span>Salto Cachorro</span> <strong class="text-emerald-400 font-mono">15 Mins.</strong></li>
+              <li class="pt-2 flex justify-between"><span>Salto de Jimenoa</span> <strong class="text-emerald-400 font-mono">27 Mins.</strong></li>
             </ul>
-            <a href="https://wa.me/18294554783?text=Quiero%20cotizar%20Mountain%20View%20de%202%20hab%20en%20Elements%20Jarabacoa" 
-               target="_blank"
-               class="block text-center w-full py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-xs transition-colors">
-              Cotizar 2 Habitaciones
-            </a>
           </div>
 
-          <!-- 3 Habitaciones -->
-          <div class="p-8 rounded-3xl bg-[#121b16] border border-emerald-900/40 hover:border-amber-500/50 transition-all space-y-5">
-            <span class="px-3 py-1 rounded-full text-[11px] font-mono bg-emerald-950 text-emerald-400 border border-emerald-800">Penthouse Luxury</span>
-            <h3 class="text-2xl font-black text-white">Penthouse (3 Habitaciones)</h3>
-            <p class="text-xs text-slate-400 leading-relaxed">
-              Exclusividad máxima. Techos a doble altura, 3 habitaciones con baño en suite, jacuzzi privado en terraza y vista 360°.
-            </p>
-            <ul class="text-xs text-slate-300 space-y-2 border-t border-emerald-900/30 pt-4">
-              <li>✓ Terraza privada con jacuzzi</li>
-              <li>✓ Chimenea central de piedra</li>
-              <li>✓ 2 Parqueos techados</li>
-            </ul>
-            <a href="https://wa.me/18294554783?text=Quiero%20cotizar%20el%20Penthouse%20de%203%20hab%20en%20Elements%20Jarabacoa" 
-               target="_blank"
-               class="block text-center w-full py-3 rounded-xl bg-emerald-800/40 hover:bg-emerald-700/60 text-emerald-300 font-bold text-xs transition-colors">
-              Cotizar Penthouse
-            </a>
-          </div>
         </div>
       </section>
 
-      <!-- Contact Banner -->
-      <section class="py-20 bg-gradient-to-b from-[#0b110e] to-[#121b16] border-t border-emerald-950">
-        <div class="max-w-4xl mx-auto px-4 text-center space-y-6">
-          <h2 class="text-3xl sm:text-5xl font-black text-white">¿Listo para asegurar tu unidad en Jarabacoa?</h2>
-          <p class="text-sm text-slate-300 max-w-xl mx-auto">
-            Comercializado por Alveare Realty. Reserva hoy con planes de pago personalizados en preventa.
+      <!-- ========================================================
+           SECCIÓN DE CONTACTO & ASESORÍA OFICIAL
+           ======================================================== -->
+      <section class="py-24 bg-gradient-to-t from-[#050807] via-[#0d1712] to-[#080d0b] border-t border-emerald-950">
+        <div class="max-w-4xl mx-auto px-4 text-center space-y-8">
+          
+          <img src="/images/canva/805eb3cf327d40d659aef315e9a41202.png" 
+               alt="Elements Jarabacoa" 
+               class="h-16 w-auto mx-auto object-contain drop-shadow" />
+
+          <h2 class="font-cinzel text-3xl sm:text-5xl font-bold text-white">
+            Asegura Tu Unidad en <span class="gold-gradient-text">Elements Jarabacoa</span>
+          </h2>
+
+          <p class="text-slate-300 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
+            Asesoría oficial por <strong class="text-white">Howard Luna (Alveare Realty)</strong>. Reserva hoy con los mejores planes de pago flexibles en preventa.
           </p>
-          <a href="https://wa.me/18294554783?text=Hola%20Howard,%20estoy%20listo%20para%20conocer%20los%20planes%20de%20pago%20de%20Elements%20Jarabacoa" 
-             target="_blank"
-             class="inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white font-black text-sm uppercase tracking-wider shadow-xl shadow-emerald-900/50 transition-all">
-            <span>Hablar con Howard Luna (Alveare)</span>
-            <span>→</span>
-          </a>
-          <div class="text-xs text-slate-500 font-mono">
-            Jamaca de Dios, Jarabacoa, La Vega • Tel: (829) 455-4783 • howard@alveare.do
+
+          <!-- Tarjeta de Contacto Directo -->
+          <div class="p-6 sm:p-8 rounded-3xl glass-pine max-w-lg mx-auto space-y-4 border border-amber-500/30">
+            <div class="text-xs font-mono text-slate-300 space-y-1.5">
+              <div>📍 <strong>Ubicación:</strong> Jamaca de Dios, Jarabacoa, La Vega</div>
+              <div>📞 <strong>Teléfono:</strong> +1 (829) 455-4783</div>
+              <div>✉️ <strong>Email:</strong> Howard@Alveare.do</div>
+              <div>🕒 <strong>Horario:</strong> Lun–Jue: 9am–9pm • Vie: 9:30am–6pm</div>
+            </div>
+
+            <div class="pt-3">
+              <a href="https://wa.me/18294554783?text=Hola%20Howard,%20estoy%20listo%20para%20conocer%20los%20precios%20y%20planes%20de%20Elements%20Jarabacoa" 
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="w-full py-4 rounded-2xl gold-gradient-bg text-slate-950 font-black text-sm tracking-wider uppercase shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2">
+                <span>Contactar a Howard Luna por WhatsApp</span>
+                <span>→</span>
+              </a>
+            </div>
           </div>
+
+          <div class="text-[11px] text-slate-400 font-mono pt-4">
+            Desarrollo y Comercialización Oficial: Alveare Realty • Infraestructura Web por ISAPromoRD
+          </div>
+
         </div>
       </section>
+
     </main>
 
     <!-- Floating WhatsApp Agent -->
     <aside aria-label="Contacto por WhatsApp">
-      <a href="https://wa.me/18294554783?text=Hola%20Howard,%20quiero%20informaci%C3%B3n%20sobre%20Elements%20Jarabacoa" 
+      <a href="https://wa.me/18294554783?text=Hola%20Howard,%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Elements%20Jarabacoa" 
          target="_blank" 
          rel="noopener noreferrer" 
-         title="Chat directo por WhatsApp"
-         class="fixed bottom-6 right-6 z-50 flex items-center gap-3 px-4 py-3 bg-[#25D366] hover:bg-[#20ba5a] text-white rounded-full shadow-2xl transition-all duration-300 hover:scale-105 group">
+         title="Chat directo por WhatsApp con Howard Luna"
+         class="fixed bottom-6 right-6 z-50 flex items-center gap-3 px-4 py-3 bg-[#25D366] hover:bg-[#20ba5a] text-white rounded-full shadow-2xl transition-all duration-300 hover:scale-105 group border-2 border-white/20">
         <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.634.053-1.637-.361-.914-.378-1.571-.977-2.146-1.554-.627-.63-1.144-1.39-1.288-1.944-.163-.628.093-1.042.277-1.233.111-.115.244-.265.367-.384.093-.09.13-.153.195-.286.065-.133.033-.247-.016-.347-.049-.1-.444-1.07-.608-1.465-.16-.385-.323-.332-.444-.338-.114-.006-.245-.008-.376-.008-.13 0-.342.049-.521.244-.179.195-.684.668-.684 1.629s.7 1.888.798 2.019c.098.131 1.378 2.104 3.339 2.951.466.201.83.322 1.114.412.468.149.894.128 1.231.078.375-.056 1.152-.471 1.315-.926.163-.455.163-.845.114-.926-.048-.082-.178-.132-.375-.231zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.662 1.435 5.178L2 22l4.981-1.39A9.96 9.96 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.2c-1.611 0-3.112-.47-4.38-1.281l-.314-.199-2.954.823.834-2.879-.208-.328A8.167 8.167 0 013.8 12c0-4.521 3.679-8.2 8.2-8.2 4.521 0 8.2 3.679 8.2 8.2 0 4.521-3.679 8.2-8.2 8.2z"/></svg>
-        <span class="text-xs font-black tracking-wider uppercase pr-1">WhatsApp Ventas</span>
+        <span class="text-xs font-black tracking-wider uppercase pr-1">WhatsApp Howard</span>
       </a>
     </aside>
+
   </body>
 </html>
