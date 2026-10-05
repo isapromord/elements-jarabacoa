@@ -6,7 +6,7 @@
     
     <!-- Primary SEO Metadata -->
     <title>Elements Jarabacoa | Residencias de Altura & Lofts en Jamaca de Dios</title>
-    <meta name="description" content="Elements Jarabacoa: Residencias y lofts de lujo en Jamaca de Dios. 1 y 2 habitaciones con equipamiento Whirlpool® llave en mano, 8 piscinas climatizadas y gestión hotelera de alta rentabilidad. Asesoría oficial por Howard Luna." />
+    <meta name="description" content="Elements Jarabacoa: Exclusivas residencias y lofts en Jamaca de Dios. 1 y 2 habitaciones con equipamiento Whirlpool® completo, 8 piscinas climatizadas y modelo hotelero de alta rentabilidad. Asesoría oficial por Howard Luna." />
     <meta name="keywords" content="elements jarabacoa, apartamentos jarabacoa, lofts de lujo jarabacoa, jamaca de dios, alveare realty, howard luna, inversion inmobiliaria jarabacoa, bienes raices republica dominicana" />
     <link rel="canonical" href="https://elementsjarabacoa.com.do/" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -20,7 +20,7 @@
     <!-- OpenGraph Metadata (WhatsApp, Social Sharing 1200x630) -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Elements Jarabacoa • Alveare Realty" />
-    <meta property="og:title" content="Elements Jarabacoa | Santuario de Eco-Lujo en Jamaca de Dios" />
+    <meta property="og:title" content="Elements Jarabacoa | Santuario de Altura en Jamaca de Dios" />
     <meta property="og:description" content="Residencias exclusivas de 1 y 2 habitaciones con línea blanca Whirlpool® completa, 8 piscinas climatizadas y modelo de rentas hotelero en Jarabacoa." />
     <meta property="og:url" content="https://elementsjarabacoa.com.do/" />
     <meta property="og:image" content="https://elementsjarabacoa.com.do/public/images/project/Exterior-de-noche-2.jpg" />
@@ -40,7 +40,7 @@
     <!-- Google Fonts: Playfair Display (Editorial Serif) & Plus Jakarta Sans (Modern Clean Sans) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -53,17 +53,25 @@
               sans: ['"Plus Jakarta Sans"', 'sans-serif'],
             },
             colors: {
-              luxury: {
-                base: '#0c100e',      /* Deep volcanic charcoal */
-                surface: '#121815',   /* Muted alpine green-slate */
-                card: '#161e1a',      /* Quiet surface card */
-                cardHover: '#1c2621',
-                sand: '#f4f3ef',      /* Warm linen white */
-                muted: '#96a49b',     /* Soft sage stone */
-                brass: '#c7a97b',     /* Warm champagne brass */
-                brassHover: '#dbbf93',
-                hairline: 'rgba(199, 169, 123, 0.18)',
-                hairlineLight: 'rgba(255, 255, 255, 0.08)',
+              obsidian: {
+                950: '#0f1013', /* Base fondo mineral puro */
+                900: '#141519', /* Superficie principal */
+                850: '#18191f', /* Tarjetas sutiles */
+                800: '#20222a', /* Hover y acentos */
+                700: '#2b2e38',
+              },
+              travertine: {
+                50:  '#faf8f5',
+                100: '#f4efe8', /* Lino cálido crudo */
+                200: '#e8e1d7', /* Piedra travertino suave */
+                300: '#d7ccbd',
+                muted: '#9a9791', /* Texto secundario neutro cálido */
+              },
+              champagne: {
+                DEFAULT: '#cbb394', /* Bronce champaña de alta gama */
+                light:   '#e2d2bc',
+                dark:    '#b49874',
+                hairline: 'rgba(203, 179, 148, 0.22)',
               }
             }
           }
@@ -73,55 +81,66 @@
 
     <style>
       body {
-        background-color: #0c100e;
-        color: #f4f3ef;
+        background-color: #0f1013;
+        color: #f4efe8;
         font-family: 'Plus Jakarta Sans', sans-serif;
         -webkit-font-smoothing: antialiased;
       }
       .font-serif {
         font-family: 'Playfair Display', Georgia, serif;
       }
-      .brass-text {
-        color: #c7a97b;
-      }
-      .brass-gradient-text {
-        background: linear-gradient(135deg, #f0dfc4 0%, #c7a97b 60%, #9e7f53 100%);
+      .champagne-gradient-text {
+        background: linear-gradient(135deg, #f7ede0 0%, #cbb394 65%, #a88960 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
-      .brass-button {
-        background: linear-gradient(135deg, #d8be97 0%, #c7a97b 100%);
-        color: #0c100e;
+      .champagne-button {
+        background: linear-gradient(135deg, #ded0be 0%, #cbb394 100%);
+        color: #0f1013;
       }
-      .brass-button:hover {
-        background: linear-gradient(135deg, #e4ceab 0%, #d4b88d 100%);
+      .champagne-button:hover {
+        background: linear-gradient(135deg, #ede2d3 0%, #d8c3a7 100%);
       }
       .hairline-border {
-        border: 1px solid rgba(199, 169, 123, 0.16);
+        border: 1px solid rgba(203, 179, 148, 0.2);
       }
-      .hairline-border-light {
+      .hairline-border-subtle {
         border: 1px solid rgba(255, 255, 255, 0.08);
       }
-      .hero-gradient-overlay {
-        background: linear-gradient(180deg, rgba(12, 16, 14, 0.35) 0%, rgba(12, 16, 14, 0.6) 55%, #0c100e 100%);
+      /* Hero Video Overlay Ligero: 20%-25% opacidad para mantener el video claro y nítido */
+      .hero-light-overlay {
+        background: linear-gradient(
+          180deg, 
+          rgba(15, 16, 19, 0.25) 0%, 
+          rgba(15, 16, 19, 0.1) 40%, 
+          rgba(15, 16, 19, 0.35) 75%, 
+          #0f1013 100%
+        );
       }
-      /* Custom fine scrollbar */
+      .hero-vignette-left {
+        background: linear-gradient(
+          90deg, 
+          rgba(15, 16, 19, 0.75) 0%, 
+          rgba(15, 16, 19, 0.3) 45%, 
+          transparent 100%
+        );
+      }
       ::-webkit-scrollbar {
         width: 6px;
       }
       ::-webkit-scrollbar-track {
-        background: #0c100e;
+        background: #0f1013;
       }
       ::-webkit-scrollbar-thumb {
-        background: #222d27;
+        background: #252830;
         border-radius: 3px;
       }
       ::-webkit-scrollbar-thumb:hover {
-        background: #c7a97b;
+        background: #cbb394;
       }
     </style>
 
-    <!-- Structured Data Schema.org Graph -->
+    <!-- Schema.org Data Graph -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -130,7 +149,7 @@
           "@type": ["ApartmentComplex", "RealEstateAgent"],
           "@id": "https://elementsjarabacoa.com.do/#project",
           "name": "Elements Jarabacoa",
-          "alternateName": "Elements Jarabacoa Lofts & Residencias",
+          "alternateName": "Elements Jarabacoa Residencias & Lofts",
           "url": "https://elementsjarabacoa.com.do/",
           "logo": "https://elementsjarabacoa.com.do/public/images/project/logo-elements.png",
           "image": [
@@ -139,7 +158,7 @@
             "https://elementsjarabacoa.com.do/public/images/project/E03-3.jpg",
             "https://elementsjarabacoa.com.do/public/images/project/L01a.jpg"
           ],
-          "description": "Santuario de eco-lujo en Jamaca de Dios, Jarabacoa. Apartamentos y lofts de 1 y 2 habitaciones con equipamiento Whirlpool® completo, 8 piscinas climatizadas y programa de administración hotelera.",
+          "description": "Exclusivo complejo residencial en Jamaca de Dios, Jarabacoa. Lofts y apartamentos de 1 y 2 habitaciones con equipamiento Whirlpool® llave en mano, 8 piscinas climatizadas y gestión hotelera de rentas.",
           "telephone": "+1-829-455-4783",
           "priceRange": "$$$",
           "address": {
@@ -160,33 +179,34 @@
     }
     </script>
   </head>
-  <body class="selection:bg-[#c7a97b] selection:text-black">
+  <body class="selection:bg-champagne selection:text-black">
 
     <!-- ========================================================
          NAVIGATION: MINIMALIST FLOATING ARCHITECTURAL BAR
+         Paleta Obsidiana Cálida & Bronce Champaña
          ======================================================== -->
-    <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-md bg-luxury-base/85 border-b border-white/[0.06]">
-      <div class="max-w-7xl mx-auto px-6 sm:px-8 h-24 flex items-center justify-between">
+    <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-md bg-obsidian-950/85 border-b border-white/[0.06]">
+      <div class="max-w-7xl mx-auto px-6 sm:px-8 h-22 sm:h-24 flex items-center justify-between">
         
         <!-- Brand Identity -->
         <a href="/" class="flex items-center gap-3.5 group">
           <img src="/public/images/project/logo-elements.png" 
                alt="Elements Jarabacoa" 
-               class="h-10 sm:h-11 w-auto object-contain transition-opacity duration-300 group-hover:opacity-85" />
+               class="h-9 sm:h-11 w-auto object-contain transition-opacity duration-300 group-hover:opacity-85" />
           <div class="flex flex-col">
-            <span class="font-serif tracking-[0.2em] text-lg sm:text-xl font-medium text-luxury-sand leading-none">ELEMENTS</span>
-            <span class="text-[9px] tracking-[0.35em] text-luxury-brass font-sans mt-1 uppercase">Jarabacoa • Residencias</span>
+            <span class="font-serif tracking-[0.2em] text-lg sm:text-xl font-normal text-travertine-100 leading-none">ELEMENTS</span>
+            <span class="text-[9px] tracking-[0.35em] text-champagne font-sans mt-1 uppercase">Jarabacoa • Residencias</span>
           </div>
         </a>
 
         <!-- Editorial Navigation -->
-        <nav class="hidden lg:flex items-center gap-9 text-xs font-medium tracking-[0.18em] text-luxury-muted uppercase">
-          <a href="#concepto" class="hover:text-luxury-sand transition-colors">Concepto</a>
-          <a href="#residencias" class="hover:text-luxury-sand transition-colors">Residencias</a>
-          <a href="#equipamiento" class="hover:text-luxury-sand transition-colors">Equipamiento</a>
-          <a href="#amenidades" class="hover:text-luxury-sand transition-colors">Amenidades</a>
-          <a href="#galeria" class="hover:text-luxury-sand transition-colors">Galería</a>
-          <a href="#ubicacion" class="hover:text-luxury-sand transition-colors">Ubicación</a>
+        <nav class="hidden lg:flex items-center gap-9 text-xs font-medium tracking-[0.2em] text-travertine-muted uppercase">
+          <a href="#concepto" class="hover:text-travertine-100 transition-colors">Concepto</a>
+          <a href="#residencias" class="hover:text-travertine-100 transition-colors">Residencias</a>
+          <a href="#equipamiento" class="hover:text-travertine-100 transition-colors">Equipamiento</a>
+          <a href="#amenidades" class="hover:text-travertine-100 transition-colors">Amenidades</a>
+          <a href="#galeria" class="hover:text-travertine-100 transition-colors">Galería</a>
+          <a href="#ubicacion" class="hover:text-travertine-100 transition-colors">Ubicación</a>
         </nav>
 
         <!-- Private Inquiry Button -->
@@ -194,7 +214,7 @@
           <a href="https://wa.me/18294554783?text=Hola%20Howard,%20deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20las%20residencias%20de%20Elements%20Jarabacoa" 
              target="_blank"
              rel="noopener noreferrer"
-             class="inline-flex items-center gap-2.5 px-6 py-2.5 rounded-full border border-luxury-brass/40 text-luxury-brass hover:bg-luxury-brass hover:text-luxury-base transition-all duration-300 text-xs font-semibold tracking-[0.14em] uppercase">
+             class="inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 rounded-full border border-champagne/40 text-champagne hover:bg-champagne hover:text-obsidian-950 transition-all duration-300 text-xs font-semibold tracking-[0.15em] uppercase">
             <span>Atención Privada</span>
             <span class="text-sm">→</span>
           </a>
@@ -206,118 +226,118 @@
     <main>
 
       <!-- ========================================================
-           HERO: CINEMATIC MONUMENTAL VIDEO EXPERIENCE
-           Puro lujo contemplativo, sin ruido visual
+           HERO: VIDEO CLARO, DESPEJADO Y A 1.35x DE VELOCIDAD
+           El centro de la pantalla está 100% LIBRE para ver el video.
+           El contenido se sitúa en el tercio inferior izquierdo.
            ======================================================== -->
-      <section class="relative min-h-screen flex items-end sm:items-center justify-center px-6 sm:px-8 pb-16 sm:pb-0 overflow-hidden pt-28">
+      <section class="relative min-h-[95vh] sm:min-h-screen flex items-end justify-start px-6 sm:px-12 lg:px-16 pb-14 sm:pb-20 overflow-hidden pt-28">
         
-        <!-- Video Stream con FastStart y Poster Fallback -->
+        <!-- Video Stream con Filtro Claro (20-25%) y Control de Velocidad en JS -->
         <div class="absolute inset-0 z-0 overflow-hidden">
-          <video autoplay 
+          <video id="heroVideo"
+                 autoplay 
                  muted 
                  loop 
                  playsinline 
                  preload="auto" 
                  poster="/public/videos/hero-poster.webp" 
-                 class="w-full h-full object-cover object-center filter brightness-[0.55] contrast-[1.08] scale-[1.02]">
+                 class="w-full h-full object-cover object-center filter brightness-[0.88] contrast-[1.05] transition-opacity duration-1000">
             <source src="/public/videos/hero-elements.webm" type="video/webm">
             <source src="/public/videos/hero-elements.mp4" type="video/mp4">
           </video>
-          <div class="absolute inset-0 hero-gradient-overlay pointer-events-none"></div>
+          
+          <!-- Capas de iluminación suave: El video se mantiene brillante y nítido -->
+          <div class="absolute inset-0 hero-light-overlay pointer-events-none"></div>
+          <div class="absolute inset-0 hero-vignette-left pointer-events-none hidden sm:block"></div>
         </div>
 
-        <!-- Editorial Content Overlay -->
-        <div class="relative z-10 max-w-5xl mx-auto text-center space-y-8 pt-12 sm:pt-0">
+        <!-- Contenido Asimétrico (Tercio Inferior Izquierdo) - CENTRO TOTALMENTE DESPEJADO -->
+        <div class="relative z-10 max-w-2xl text-left space-y-6">
           
-          <div class="inline-block">
-            <p class="text-xs sm:text-xs font-sans tracking-[0.35em] uppercase text-luxury-brass font-medium">
-              Jamaca de Dios • Cordillera Central • Jarabacoa
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-obsidian-950/70 backdrop-blur-md border border-champagne/30 shadow-lg">
+            <span class="w-2 h-2 rounded-full bg-champagne animate-pulse"></span>
+            <p class="text-[11px] font-sans tracking-[0.25em] uppercase text-champagne font-medium">
+              Jamaca de Dios • Jarabacoa
             </p>
           </div>
 
-          <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-normal text-luxury-sand leading-[1.12] tracking-tight">
-            El Santuario de Altura donde la Arquitectura <br class="hidden sm:inline"/>
-            <span class="italic font-light brass-gradient-text">abraza la naturaleza.</span>
+          <h1 class="font-serif text-3xl sm:text-5xl md:text-6xl font-normal text-travertine-100 leading-[1.15] drop-shadow-lg">
+            El Santuario de Altura <br/>
+            <span class="italic font-light champagne-gradient-text">donde la montaña respira.</span>
           </h1>
 
-          <p class="text-sm sm:text-lg text-luxury-muted max-w-2xl mx-auto font-light leading-relaxed">
-            Una colección privada de residencias y lofts concebidos para quienes valoran el silencio de la montaña, el clima templado y un modelo de inversión pasiva llave en mano.
+          <p class="text-sm sm:text-base text-travertine-200/90 font-light leading-relaxed max-w-lg drop-shadow">
+            Residencias y lofts exclusivos con entrega llave en mano, 8 piscinas climatizadas y vistas hacia la cordillera central.
           </p>
 
-          <!-- Floating Architectural Specs (Quiet Metrics) -->
-          <div class="pt-2 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-xs tracking-[0.18em] uppercase text-luxury-sand/80 font-medium">
-            <div class="flex items-center gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-luxury-brass"></span>
-              <span>1 & 2 Habitaciones</span>
-            </div>
-            <div class="flex items-center gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-luxury-brass"></span>
-              <span>8 Piscinas Climatizadas</span>
-            </div>
-            <div class="flex items-center gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-luxury-brass"></span>
-              <span>Whirlpool® Equipado</span>
-            </div>
-            <div class="flex items-center gap-2">
-              <span class="w-1.5 h-1.5 rounded-full bg-luxury-brass"></span>
-              <span>Gestión Hotelera 100% Pasiva</span>
-            </div>
+          <!-- Badges de Arquitectura en Fila Horizontal Sutil -->
+          <div class="pt-1 flex flex-wrap items-center gap-4 text-xs tracking-[0.16em] uppercase text-travertine-100 font-medium">
+            <span class="bg-obsidian-950/60 backdrop-blur-md px-3.5 py-1.5 rounded-full hairline-border-subtle">1 & 2 Habitaciones</span>
+            <span class="bg-obsidian-950/60 backdrop-blur-md px-3.5 py-1.5 rounded-full hairline-border-subtle">8 Piscinas Climatizadas</span>
+            <span class="bg-obsidian-950/60 backdrop-blur-md px-3.5 py-1.5 rounded-full hairline-border-subtle">Whirlpool® Incluido</span>
+            <span class="bg-obsidian-950/60 backdrop-blur-md px-3.5 py-1.5 rounded-full hairline-border-subtle">Retorno Hotelero</span>
           </div>
 
-          <!-- Discrete Call to Action -->
-          <div class="pt-6 flex flex-col sm:flex-row items-center justify-center gap-5">
+          <!-- Acciones en el Tercio Inferior -->
+          <div class="pt-4 flex flex-col sm:flex-row items-center gap-4">
             <a href="https://wa.me/18294554783?text=Hola%20Howard,%20quiero%20conocer%20la%20disponibilidad%20y%20precios%20de%20Elements%20Jarabacoa" 
                target="_blank"
                rel="noopener noreferrer"
-               class="w-full sm:w-auto px-8 py-4 rounded-full brass-button font-medium text-xs tracking-[0.16em] uppercase transition-all duration-300 hover:shadow-xl hover:shadow-luxury-brass/10">
+               class="w-full sm:w-auto px-7 py-3.5 rounded-full champagne-button font-medium text-xs tracking-[0.16em] uppercase transition-all duration-300 hover:shadow-xl hover:shadow-champagne/15 text-center">
               Solicitar Dossier & Precios
             </a>
-            <a href="#concepto" 
-               class="w-full sm:w-auto px-8 py-4 rounded-full hairline-border-light hover:border-luxury-brass/50 text-luxury-sand text-xs tracking-[0.16em] uppercase transition-all duration-300">
-              Explorar el Proyecto
+            <a href="#residencias" 
+               class="w-full sm:w-auto px-7 py-3.5 rounded-full bg-obsidian-950/60 backdrop-blur-md hairline-border-subtle hover:border-champagne/50 text-travertine-100 text-xs tracking-[0.16em] uppercase transition-all duration-300 text-center">
+              Ver Residencias
             </a>
           </div>
 
+        </div>
+
+        <!-- Indicador de video activo en esquina inferior derecha -->
+        <div class="hidden md:flex absolute bottom-8 right-12 z-10 items-center gap-3 bg-obsidian-950/60 backdrop-blur-md px-4 py-2 rounded-full hairline-border-subtle text-travertine-muted text-[11px] font-mono tracking-widest">
+          <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          <span>ENTORNO NATURAL EN VIVO</span>
         </div>
 
       </section>
 
       <!-- ========================================================
            CONCEPTO: EL VALOR DE LA DESCONEXIÓN & LA MONTAÑA
-           Layout Asimétrico Editorial (Quiet Luxury)
+           Paleta Obsidiana & Travertino (Cero Verde)
            ======================================================== -->
       <section id="concepto" class="py-32 max-w-7xl mx-auto px-6 sm:px-8 border-b border-white/[0.06]">
         
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
           
           <div class="lg:col-span-5 space-y-8">
-            <span class="text-xs font-sans tracking-[0.3em] uppercase text-luxury-brass font-medium block">
+            <span class="text-xs font-sans tracking-[0.3em] uppercase text-champagne font-medium block">
               01 • Filosofía de Proyecto
             </span>
             
-            <h2 class="font-serif text-3xl sm:text-5xl font-normal text-luxury-sand leading-[1.2]">
+            <h2 class="font-serif text-3xl sm:text-5xl font-normal text-travertine-100 leading-[1.2]">
               Un refugio pensado para <br/>
-              <span class="italic font-light">el descanso y el patrimonio.</span>
+              <span class="italic font-light champagne-gradient-text">el descanso y el patrimonio.</span>
             </h2>
 
-            <div class="space-y-5 text-sm sm:text-base text-luxury-muted font-light leading-relaxed">
+            <div class="space-y-5 text-sm sm:text-base text-travertine-muted font-light leading-relaxed">
               <p>
-                Ubicado en el prestigioso enclave de <strong class="text-luxury-sand font-medium">Jamaca de Dios</strong>, Elements Jarabacoa responde a la creciente necesidad de un espacio donde refugiarse del bullicio urbano sin renunciar al estándar de confort de un resort cinco estrellas.
+                Ubicado en el prestigioso enclave de <strong class="text-travertine-100 font-medium">Jamaca de Dios</strong>, Elements Jarabacoa responde a la creciente búsqueda de un espacio donde refugiarse del ritmo urbano sin renunciar al estándar de confort de un resort cinco estrellas.
               </p>
               <p>
-                A más de 800 metros de altitud, el proyecto goza de una temperatura privilegiada que oscila entre los 16°C y 22°C durante todo el año, aire puro y una vegetación exuberante de pinos autóctonos.
+                A más de 800 metros de altitud, el proyecto goza de una temperatura privilegiada que oscila entre los 16°C y 22°C durante todo el año, aire puro y una vegetación serena de pinos de montaña.
               </p>
             </div>
 
             <!-- Ficha Técnica Resumida -->
             <div class="pt-4 grid grid-cols-2 gap-6 border-t border-white/[0.08]">
               <div>
-                <span class="block text-2xl font-serif text-luxury-sand">800 m</span>
-                <span class="text-xs tracking-[0.18em] uppercase text-luxury-muted mt-1 block">Altitud Promedio</span>
+                <span class="block text-2xl font-serif text-travertine-100">800 m</span>
+                <span class="text-xs tracking-[0.18em] uppercase text-travertine-muted mt-1 block">Altitud Promedio</span>
               </div>
               <div>
-                <span class="block text-2xl font-serif text-luxury-sand">18°C</span>
-                <span class="text-xs tracking-[0.18em] uppercase text-luxury-muted mt-1 block">Clima Templado</span>
+                <span class="block text-2xl font-serif text-travertine-100">18°C</span>
+                <span class="text-xs tracking-[0.18em] uppercase text-travertine-muted mt-1 block">Clima Templado</span>
               </div>
             </div>
           </div>
@@ -331,11 +351,11 @@
                      alt="Arquitectura de montaña en Elements Jarabacoa" 
                      class="w-full h-[450px] sm:h-[560px] object-cover transition-transform duration-1000 group-hover:scale-[1.03]" />
               </picture>
-              <div class="absolute bottom-0 inset-x-0 p-6 sm:p-8 bg-gradient-to-t from-luxury-base via-luxury-base/60 to-transparent">
-                <p class="text-xs font-sans tracking-[0.2em] text-luxury-brass uppercase">
+              <div class="absolute bottom-0 inset-x-0 p-6 sm:p-8 bg-gradient-to-t from-obsidian-950 via-obsidian-950/60 to-transparent">
+                <p class="text-xs font-sans tracking-[0.2em] text-champagne uppercase">
                   Arquitectura Contemporánea • Jamaca de Dios
                 </p>
-                <p class="text-sm font-serif italic text-luxury-sand/90 mt-1">
+                <p class="text-sm font-serif italic text-travertine-100/90 mt-1">
                   Líneas limpias, balcones vidriados y materiales nobles integrados al paisaje natural.
                 </p>
               </div>
@@ -353,13 +373,13 @@
       <section id="residencias" class="py-32 max-w-7xl mx-auto px-6 sm:px-8 border-b border-white/[0.06]">
         
         <div class="max-w-3xl mb-20 space-y-4">
-          <span class="text-xs font-sans tracking-[0.3em] uppercase text-luxury-brass font-medium block">
+          <span class="text-xs font-sans tracking-[0.3em] uppercase text-champagne font-medium block">
             02 • Espacios Privados
           </span>
-          <h2 class="font-serif text-3xl sm:text-5xl font-normal text-luxury-sand leading-tight">
+          <h2 class="font-serif text-3xl sm:text-5xl font-normal text-travertine-100 leading-tight">
             Diseñados para cautivar los sentidos.
           </h2>
-          <p class="text-sm sm:text-base text-luxury-muted font-light leading-relaxed">
+          <p class="text-sm sm:text-base text-travertine-muted font-light leading-relaxed">
             Cada loft y apartamento ha sido proyectado para disolver la frontera entre el interior y la montaña, mediante ventanales de suelo a techo, techos elevados y una cuidada selección de texturas.
           </p>
         </div>
@@ -372,17 +392,17 @@
                  alt="Sala de estar principal en Elements Jarabacoa" 
                  class="w-full h-[420px] sm:h-[600px] object-cover transition-transform duration-1000 group-hover:scale-[1.02]" />
           </picture>
-          <div class="absolute bottom-0 inset-x-0 p-8 sm:p-12 bg-gradient-to-t from-luxury-base via-luxury-base/70 to-transparent flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+          <div class="absolute bottom-0 inset-x-0 p-8 sm:p-12 bg-gradient-to-t from-obsidian-950 via-obsidian-950/70 to-transparent flex flex-col sm:flex-row sm:items-end justify-between gap-4">
             <div class="space-y-2 max-w-xl">
-              <span class="text-xs tracking-[0.25em] text-luxury-brass uppercase font-sans">El Salón Principal</span>
-              <h3 class="font-serif text-2xl sm:text-3xl text-luxury-sand">Amplitud, Luz Natural y Vistas Panorámicas</h3>
-              <p class="text-xs sm:text-sm text-luxury-muted font-light">
+              <span class="text-xs tracking-[0.25em] text-champagne uppercase font-sans">El Salón Principal</span>
+              <h3 class="font-serif text-2xl sm:text-3xl text-travertine-100">Amplitud, Luz Natural y Vistas Panorámicas</h3>
+              <p class="text-xs sm:text-sm text-travertine-muted font-light">
                 Espacios diáfanos con carpintería de aluminio de alta prestación y conexión directa con el aire fresco de la terraza.
               </p>
             </div>
             <a href="https://wa.me/18294554783?text=Hola%20Howard,%20deseo%20conocer%20los%20planos%20de%20los%20lofts%20en%20Elements%20Jarabacoa" 
                target="_blank"
-               class="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.16em] uppercase text-luxury-brass hover:text-luxury-brassHover pb-1 border-b border-luxury-brass/40 whitespace-nowrap">
+               class="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.16em] uppercase text-champagne hover:text-champagne-light pb-1 border-b border-champagne/40 whitespace-nowrap">
               <span>Consultar Planos</span>
               <span>→</span>
             </a>
@@ -394,7 +414,7 @@
           
           <!-- L02a: Loft Contemporáneo -->
           <div class="space-y-4 group">
-            <div class="h-80 rounded-2xl overflow-hidden hairline-border relative shadow-lg">
+            <div class="h-80 rounded-2xl overflow-hidden hairline-border relative shadow-lg bg-obsidian-900">
               <picture>
                 <source srcset="/public/images/project/L02a.webp" type="image/webp">
                 <img src="/public/images/project/L02a.jpg" 
@@ -403,9 +423,9 @@
               </picture>
             </div>
             <div class="space-y-1.5">
-              <span class="text-[10px] font-sans tracking-[0.25em] text-luxury-brass uppercase">Tipología Loft B</span>
-              <h4 class="font-serif text-xl text-luxury-sand">Distribución Eficiente & Modular</h4>
-              <p class="text-xs text-luxury-muted font-light leading-relaxed">
+              <span class="text-[10px] font-sans tracking-[0.25em] text-champagne uppercase">Tipología Loft B</span>
+              <h4 class="font-serif text-xl text-travertine-100">Distribución Eficiente & Modular</h4>
+              <p class="text-xs text-travertine-muted font-light leading-relaxed">
                 Diseñado para maximizar la tasa de ocupación en plataformas turísticas con confort para parejas y estancias ejecutivas.
               </p>
             </div>
@@ -413,7 +433,7 @@
 
           <!-- B01: Suite Master -->
           <div class="space-y-4 group">
-            <div class="h-80 rounded-2xl overflow-hidden hairline-border relative shadow-lg">
+            <div class="h-80 rounded-2xl overflow-hidden hairline-border relative shadow-lg bg-obsidian-900">
               <picture>
                 <source srcset="/public/images/project/B01.webp" type="image/webp">
                 <img src="/public/images/project/B01.jpg" 
@@ -422,9 +442,9 @@
               </picture>
             </div>
             <div class="space-y-1.5">
-              <span class="text-[10px] font-sans tracking-[0.25em] text-luxury-brass uppercase">La Suite Principal</span>
-              <h4 class="font-serif text-xl text-luxury-sand">Atmósfera de Silencio & Descanso</h4>
-              <p class="text-xs text-luxury-muted font-light leading-relaxed">
+              <span class="text-[10px] font-sans tracking-[0.25em] text-champagne uppercase">La Suite Principal</span>
+              <h4 class="font-serif text-xl text-travertine-100">Atmósfera de Silencio & Descanso</h4>
+              <p class="text-xs text-travertine-muted font-light leading-relaxed">
                 Climatización inverter ultrasilenciosa, iluminación indirecta cálida y vistas hacia los jardines de la propiedad.
               </p>
             </div>
@@ -432,7 +452,7 @@
 
           <!-- BA01: Baño Spa -->
           <div class="space-y-4 group">
-            <div class="h-80 rounded-2xl overflow-hidden hairline-border relative shadow-lg">
+            <div class="h-80 rounded-2xl overflow-hidden hairline-border relative shadow-lg bg-obsidian-900">
               <picture>
                 <source srcset="/public/images/project/BA01.webp" type="image/webp">
                 <img src="/public/images/project/BA01.jpg" 
@@ -441,9 +461,9 @@
               </picture>
             </div>
             <div class="space-y-1.5">
-              <span class="text-[10px] font-sans tracking-[0.25em] text-luxury-brass uppercase">Baño de Inspiración Spa</span>
-              <h4 class="font-serif text-xl text-luxury-sand">Revestimientos Nobles & Grifería</h4>
-              <p class="text-xs text-luxury-muted font-light leading-relaxed">
+              <span class="text-[10px] font-sans tracking-[0.25em] text-champagne uppercase">Baño de Inspiración Spa</span>
+              <h4 class="font-serif text-xl text-travertine-100">Revestimientos Nobles & Grifería</h4>
+              <p class="text-xs text-travertine-muted font-light leading-relaxed">
                 Mamparas de cristal templado, porcelanatos rectificados y agua caliente constante mediante caldera de gas de línea.
               </p>
             </div>
@@ -457,7 +477,7 @@
            EQUIPAMIENTO: LÍNEA BLANCA WHIRLPOOL® LLAVE EN MANO
            Editorial Presentation con L01b.jpg (Cocina Gourmet)
            ======================================================== -->
-      <section id="equipamiento" class="py-32 bg-luxury-surface/50 border-b border-white/[0.06]">
+      <section id="equipamiento" class="py-32 bg-obsidian-900/60 border-b border-white/[0.06]">
         <div class="max-w-7xl mx-auto px-6 sm:px-8">
           
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
@@ -471,26 +491,26 @@
                        alt="Cocina modular y comedor con línea blanca en Elements Jarabacoa" 
                        class="w-full h-[450px] sm:h-[540px] object-cover transition-transform duration-1000 group-hover:scale-[1.02]" />
                 </picture>
-                <div class="absolute bottom-0 inset-x-0 p-6 sm:p-8 bg-gradient-to-t from-luxury-base via-luxury-base/60 to-transparent">
-                  <span class="text-xs font-sans tracking-[0.25em] text-luxury-brass uppercase">Equipamiento Integral Whirlpool®</span>
-                  <p class="font-serif text-lg text-luxury-sand mt-1">Listo para habitar o monetizar desde el primer día.</p>
+                <div class="absolute bottom-0 inset-x-0 p-6 sm:p-8 bg-gradient-to-t from-obsidian-950 via-obsidian-950/60 to-transparent">
+                  <span class="text-xs font-sans tracking-[0.25em] text-champagne uppercase">Equipamiento Integral Whirlpool®</span>
+                  <p class="font-serif text-lg text-travertine-100 mt-1">Listo para habitar o monetizar desde el primer día.</p>
                 </div>
               </div>
             </div>
 
             <!-- Especificaciones Editoriales (Sin emojis) -->
             <div class="lg:col-span-6 order-1 lg:order-2 space-y-8">
-              <span class="text-xs font-sans tracking-[0.3em] uppercase text-luxury-brass font-medium block">
+              <span class="text-xs font-sans tracking-[0.3em] uppercase text-champagne font-medium block">
                 03 • Entrega Llave en Mano
               </span>
 
-              <h2 class="font-serif text-3xl sm:text-5xl font-normal text-luxury-sand leading-[1.2]">
+              <h2 class="font-serif text-3xl sm:text-5xl font-normal text-travertine-100 leading-[1.2]">
                 Equipamiento integral <br/>
-                <span class="italic font-light">sin inversiones imprevistas.</span>
+                <span class="italic font-light champagne-gradient-text">sin gastos imprevistos.</span>
               </h2>
 
-              <p class="text-sm sm:text-base text-luxury-muted font-light leading-relaxed">
-                Cada unidad se entrega dotada con electrodomésticos de la firma internacional <strong class="text-luxury-sand font-medium">Whirlpool®</strong> y cerraduras electrónicas para garantizar una operación inmediata en el mercado de rentas de lujo.
+              <p class="text-sm sm:text-base text-travertine-muted font-light leading-relaxed">
+                Cada unidad se entrega dotada con electrodomésticos de la firma internacional <strong class="text-travertine-100 font-medium">Whirlpool®</strong> y cerraduras electrónicas para garantizar una operación inmediata en el mercado de rentas de lujo.
               </p>
 
               <!-- Lista Arquitectónica de Especificaciones -->
@@ -498,50 +518,50 @@
                 
                 <div class="py-3 border-b border-white/[0.08] flex items-start justify-between gap-4">
                   <div>
-                    <h4 class="text-sm font-medium text-luxury-sand font-serif">Cerraduras Inteligentes Inalámbricas</h4>
-                    <p class="text-xs text-luxury-muted font-light mt-0.5">Control de acceso digital sin llaves para check-in autónomo y seguro.</p>
+                    <h4 class="text-sm font-medium text-travertine-100 font-serif">Cerraduras Inteligentes Inalámbricas</h4>
+                    <p class="text-xs text-travertine-muted font-light mt-0.5">Control de acceso digital sin llaves para check-in autónomo y seguro.</p>
                   </div>
-                  <span class="text-xs font-mono text-luxury-brass uppercase tracking-wider">Incluido</span>
+                  <span class="text-xs font-mono text-champagne uppercase tracking-wider">Incluido</span>
                 </div>
 
                 <div class="py-3 border-b border-white/[0.08] flex items-start justify-between gap-4">
                   <div>
-                    <h4 class="text-sm font-medium text-luxury-sand font-serif">Refrigerador Whirlpool® Acero Inoxidable</h4>
-                    <p class="text-xs text-luxury-muted font-light mt-0.5">Eficiencia energética y diseño integrado en cocina modular.</p>
+                    <h4 class="text-sm font-medium text-travertine-100 font-serif">Refrigerador Whirlpool® Acero Inoxidable</h4>
+                    <p class="text-xs text-travertine-muted font-light mt-0.5">Eficiencia energética y diseño integrado en cocina modular.</p>
                   </div>
-                  <span class="text-xs font-mono text-luxury-brass uppercase tracking-wider">Incluido</span>
+                  <span class="text-xs font-mono text-champagne uppercase tracking-wider">Incluido</span>
                 </div>
 
                 <div class="py-3 border-b border-white/[0.08] flex items-start justify-between gap-4">
                   <div>
-                    <h4 class="text-sm font-medium text-luxury-sand font-serif">Estufa Empotrada & Extractor de Campana</h4>
-                    <p class="text-xs text-luxury-muted font-light mt-0.5">Tope de granito natural y herrajes de cierre suave.</p>
+                    <h4 class="text-sm font-medium text-travertine-100 font-serif">Estufa Empotrada & Extractor de Campana</h4>
+                    <p class="text-xs text-travertine-muted font-light mt-0.5">Tope de granito natural y herrajes de cierre suave.</p>
                   </div>
-                  <span class="text-xs font-mono text-luxury-brass uppercase tracking-wider">Incluido</span>
+                  <span class="text-xs font-mono text-champagne uppercase tracking-wider">Incluido</span>
                 </div>
 
                 <div class="py-3 border-b border-white/[0.08] flex items-start justify-between gap-4">
                   <div>
-                    <h4 class="text-sm font-medium text-luxury-sand font-serif">Torre de Lavado (Lavadora / Secadora)</h4>
-                    <p class="text-xs text-luxury-muted font-light mt-0.5">Área de servicio privada diseñada para estadías prolongadas.</p>
+                    <h4 class="text-sm font-medium text-travertine-100 font-serif">Torre de Lavado (Lavadora / Secadora)</h4>
+                    <p class="text-xs text-travertine-muted font-light mt-0.5">Área de servicio privada diseñada para estadías prolongadas.</p>
                   </div>
-                  <span class="text-xs font-mono text-luxury-brass uppercase tracking-wider">Incluido</span>
+                  <span class="text-xs font-mono text-champagne uppercase tracking-wider">Incluido</span>
                 </div>
 
                 <div class="py-3 border-b border-white/[0.08] flex items-start justify-between gap-4">
                   <div>
-                    <h4 class="text-sm font-medium text-luxury-sand font-serif">Calentador de Gas de Flujo Continuo</h4>
-                    <p class="text-xs text-luxury-muted font-light mt-0.5">Suministro térmico garantizado ante cualquier temperatura externa.</p>
+                    <h4 class="text-sm font-medium text-travertine-100 font-serif">Calentador de Gas de Flujo Continuo</h4>
+                    <p class="text-xs text-travertine-muted font-light mt-0.5">Suministro térmico garantizado ante cualquier temperatura externa.</p>
                   </div>
-                  <span class="text-xs font-mono text-luxury-brass uppercase tracking-wider">Incluido</span>
+                  <span class="text-xs font-mono text-champagne uppercase tracking-wider">Incluido</span>
                 </div>
 
                 <div class="py-3 border-b border-white/[0.08] flex items-start justify-between gap-4">
                   <div>
-                    <h4 class="text-sm font-medium text-luxury-sand font-serif">Climatización Inverter en Habitaciones</h4>
-                    <p class="text-xs text-luxury-muted font-light mt-0.5">Confort acústico y mínimo consumo eléctrico certificado.</p>
+                    <h4 class="text-sm font-medium text-travertine-100 font-serif">Climatización Inverter en Habitaciones</h4>
+                    <p class="text-xs text-travertine-muted font-light mt-0.5">Confort acústico y mínimo consumo eléctrico certificado.</p>
                   </div>
-                  <span class="text-xs font-mono text-luxury-brass uppercase tracking-wider">Incluido</span>
+                  <span class="text-xs font-mono text-champagne uppercase tracking-wider">Incluido</span>
                 </div>
 
               </div>
@@ -549,7 +569,7 @@
               <div class="pt-2">
                 <a href="https://wa.me/18294554783?text=Hola%20Howard,%20deseo%20confirmar%20el%20inventario%20de%20l%C3%ADnea%20blanca%20de%20Elements%20Jarabacoa" 
                    target="_blank"
-                   class="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.16em] uppercase text-luxury-brass hover:text-luxury-brassHover pb-1 border-b border-luxury-brass/40">
+                   class="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.16em] uppercase text-champagne hover:text-champagne-light pb-1 border-b border-champagne/40">
                   <span>Descargar Inventario de Equipamiento en PDF</span>
                   <span>→</span>
                 </a>
@@ -569,13 +589,13 @@
       <section id="amenidades" class="py-32 max-w-7xl mx-auto px-6 sm:px-8 border-b border-white/[0.06]">
         
         <div class="max-w-3xl mb-20 space-y-4">
-          <span class="text-xs font-sans tracking-[0.3em] uppercase text-luxury-brass font-medium block">
+          <span class="text-xs font-sans tracking-[0.3em] uppercase text-champagne font-medium block">
             04 • Vida al Aire Libre
           </span>
-          <h2 class="font-serif text-3xl sm:text-5xl font-normal text-luxury-sand leading-tight">
+          <h2 class="font-serif text-3xl sm:text-5xl font-normal text-travertine-100 leading-tight">
             Amenidades concebidas para el bienestar integral.
           </h2>
-          <p class="text-sm sm:text-base text-luxury-muted font-light leading-relaxed">
+          <p class="text-sm sm:text-base text-travertine-muted font-light leading-relaxed">
             Una infraestructura de esparcimiento que rivaliza con los mejores hoteles boutique del Caribe, diseñada para operar en cualquier estación del año.
           </p>
         </div>
@@ -588,15 +608,15 @@
                  alt="8 Piscinas Climatizadas y Jacuzzis de Montaña en Elements Jarabacoa" 
                  class="w-full h-[450px] sm:h-[620px] object-cover transition-transform duration-1000 group-hover:scale-[1.02]" />
           </picture>
-          <div class="absolute bottom-0 inset-x-0 p-8 sm:p-12 bg-gradient-to-t from-luxury-base via-luxury-base/70 to-transparent flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+          <div class="absolute bottom-0 inset-x-0 p-8 sm:p-12 bg-gradient-to-t from-obsidian-950 via-obsidian-950/70 to-transparent flex flex-col sm:flex-row sm:items-end justify-between gap-4">
             <div class="space-y-2 max-w-xl">
-              <span class="text-xs tracking-[0.25em] text-luxury-brass uppercase font-sans">Agua Climatizada & Relax</span>
-              <h3 class="font-serif text-2xl sm:text-3xl text-luxury-sand">8 Piscinas Climatizadas & Jacuzzis</h3>
-              <p class="text-xs sm:text-sm text-luxury-muted font-light">
+              <span class="text-xs tracking-[0.25em] text-champagne uppercase font-sans">Agua Climatizada & Relax</span>
+              <h3 class="font-serif text-2xl sm:text-3xl text-travertine-100">8 Piscinas Climatizadas & Jacuzzis</h3>
+              <p class="text-xs sm:text-sm text-travertine-muted font-light">
                 Temperatura de agua regulada frente a los valles de pinos, permitiendo el disfrute acuático incluso en las tardes más frescas de la montaña.
               </p>
             </div>
-            <span class="text-xs tracking-[0.2em] uppercase font-mono text-luxury-brass bg-luxury-base/80 px-4 py-2 rounded-full hairline-border">
+            <span class="text-xs tracking-[0.2em] uppercase font-mono text-champagne bg-obsidian-950/80 px-4 py-2 rounded-full hairline-border">
               8 Piscinas • 4 Fire Pits
             </span>
           </div>
@@ -606,7 +626,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           
           <!-- Exterior Noche: Fire Pits y Pérgolas BBQ -->
-          <div class="p-8 sm:p-10 rounded-2xl bg-luxury-surface/40 hairline-border space-y-6">
+          <div class="p-8 sm:p-10 rounded-2xl bg-obsidian-900/60 hairline-border space-y-6">
             <div class="h-64 rounded-xl overflow-hidden relative">
               <picture>
                 <source srcset="/public/images/project/Exterior-de-noche-2.webp" type="image/webp">
@@ -616,38 +636,38 @@
               </picture>
             </div>
             <div class="space-y-2">
-              <span class="text-[10px] font-sans tracking-[0.25em] text-luxury-brass uppercase">Ambiente Nocturno</span>
-              <h4 class="font-serif text-2xl text-luxury-sand">4 Fogatas (Fire Pits) & 7 Pérgolas con BBQ</h4>
-              <p class="text-xs sm:text-sm text-luxury-muted font-light leading-relaxed">
+              <span class="text-[10px] font-sans tracking-[0.25em] text-champagne uppercase">Ambiente Nocturno</span>
+              <h4 class="font-serif text-2xl text-travertine-100">4 Fogatas (Fire Pits) & 7 Pérgolas con BBQ</h4>
+              <p class="text-xs sm:text-sm text-travertine-muted font-light leading-relaxed">
                 Puntos de reunión al aire libre con iluminación rasante suave, diseñados para compartir bajo el cielo estrellado de Jarabacoa.
               </p>
             </div>
           </div>
 
           <!-- Deportes, Movilidad y Servicios -->
-          <div class="p-8 sm:p-10 rounded-2xl bg-luxury-surface/40 hairline-border flex flex-col justify-between space-y-6">
+          <div class="p-8 sm:p-10 rounded-2xl bg-obsidian-900/60 hairline-border flex flex-col justify-between space-y-6">
             <div class="space-y-6">
-              <span class="text-[10px] font-sans tracking-[0.25em] text-luxury-brass uppercase">Infraestructura & Deporte</span>
-              <h4 class="font-serif text-2xl text-luxury-sand">Canchas de Tenis, Billar & Bar Social</h4>
-              <p class="text-xs sm:text-sm text-luxury-muted font-light leading-relaxed">
+              <span class="text-[10px] font-sans tracking-[0.25em] text-champagne uppercase">Infraestructura & Deporte</span>
+              <h4 class="font-serif text-2xl text-travertine-100">Canchas de Tenis, Billar & Bar Social</h4>
+              <p class="text-xs sm:text-sm text-travertine-muted font-light leading-relaxed">
                 Club social privado con lounge de entretenimiento, canchas reglamentarias y senderos para caminatas entre la flora local.
               </p>
 
-              <div class="grid grid-cols-2 gap-4 pt-4 border-t border-white/[0.08] text-xs text-luxury-sand/90">
+              <div class="grid grid-cols-2 gap-4 pt-4 border-t border-white/[0.08] text-xs text-travertine-100/90">
                 <div class="flex items-center gap-2.5">
-                  <span class="w-1.5 h-1.5 rounded-full bg-luxury-brass"></span>
+                  <span class="w-1.5 h-1.5 rounded-full bg-champagne"></span>
                   <span>Cargadores de Vehículos EV</span>
                 </div>
                 <div class="flex items-center gap-2.5">
-                  <span class="w-1.5 h-1.5 rounded-full bg-luxury-brass"></span>
+                  <span class="w-1.5 h-1.5 rounded-full bg-champagne"></span>
                   <span>Ascensores en Cada Torre</span>
                 </div>
                 <div class="flex items-center gap-2.5">
-                  <span class="w-1.5 h-1.5 rounded-full bg-luxury-brass"></span>
+                  <span class="w-1.5 h-1.5 rounded-full bg-champagne"></span>
                   <span>Paneles Solares Áreas Comunes</span>
                 </div>
                 <div class="flex items-center gap-2.5">
-                  <span class="w-1.5 h-1.5 rounded-full bg-luxury-brass"></span>
+                  <span class="w-1.5 h-1.5 rounded-full bg-champagne"></span>
                   <span>Seguridad & Garita 24/7</span>
                 </div>
               </div>
@@ -656,7 +676,7 @@
             <div class="pt-4 border-t border-white/[0.08]">
               <a href="https://wa.me/18294554783?text=Hola%20Howard,%20quiero%20conocer%20m%C3%A1s%20sobre%20las%20amenidades%20de%20Elements%20Jarabacoa" 
                  target="_blank"
-                 class="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.16em] uppercase text-luxury-brass hover:text-luxury-brassHover">
+                 class="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.16em] uppercase text-champagne hover:text-champagne-light">
                 <span>Solicitar Tour Guiado con Howard Luna</span>
                 <span>→</span>
               </a>
@@ -671,23 +691,23 @@
            MODELO DE INVERSIÓN: RENTAS HOTELERA PASIVAS
            “Donde podrás disfrutar y tenerlo TODO, sin encargarte de TODO”
            ======================================================== -->
-      <section class="py-32 bg-luxury-base border-b border-white/[0.06]">
+      <section class="py-32 bg-obsidian-950 border-b border-white/[0.06]">
         <div class="max-w-5xl mx-auto px-6 sm:px-8 text-center space-y-10">
           
-          <span class="text-xs font-sans tracking-[0.35em] uppercase text-luxury-brass font-medium">
+          <span class="text-xs font-sans tracking-[0.35em] uppercase text-champagne font-medium">
             05 • Rentabilidad Inmobiliaria
           </span>
 
-          <h2 class="font-serif text-3xl sm:text-5xl md:text-6xl font-normal text-luxury-sand leading-tight">
+          <h2 class="font-serif text-3xl sm:text-5xl md:text-6xl font-normal text-travertine-100 leading-tight">
             Gestión hotelera profesional: <br/>
-            <span class="italic font-light brass-gradient-text">Retorno pasivo sin fricciones.</span>
+            <span class="italic font-light champagne-gradient-text">Retorno pasivo sin fricciones.</span>
           </h2>
 
-          <div class="max-w-3xl mx-auto p-8 sm:p-12 rounded-2xl bg-luxury-surface/60 hairline-border space-y-5">
-            <p class="font-serif italic text-xl sm:text-2xl text-luxury-sand font-light">
+          <div class="max-w-3xl mx-auto p-8 sm:p-12 rounded-2xl bg-obsidian-900/60 hairline-border space-y-5">
+            <p class="font-serif italic text-xl sm:text-2xl text-travertine-100 font-light">
               “Donde podrás disfrutar y tenerlo TODO, ¡sin encargarte de TODO!”
             </p>
-            <p class="text-xs sm:text-sm text-luxury-muted font-light leading-relaxed max-w-2xl mx-auto">
+            <p class="text-xs sm:text-sm text-travertine-muted font-light leading-relaxed max-w-2xl mx-auto">
               Un modelo 100% ecológico de gestión integral de alquileres. Tu propiedad se mantiene impecable, con servicio de conserjería, limpieza, check-in digital y liquidación transparente de ingresos mensuales mientras estás fuera.
             </p>
           </div>
@@ -696,7 +716,7 @@
             <a href="https://wa.me/18294554783?text=Hola%20Howard,%20deseo%20conocer%20la%20proyecci%C3%B3n%20financiera%20y%20el%20retorno%20de%20inversi%C3%B3n%20en%20Elements%20Jarabacoa" 
                target="_blank"
                rel="noopener noreferrer"
-               class="inline-flex items-center gap-3 px-9 py-4 rounded-full brass-button font-medium text-xs tracking-[0.16em] uppercase transition-all duration-300">
+               class="inline-flex items-center gap-3 px-9 py-4 rounded-full champagne-button font-medium text-xs tracking-[0.16em] uppercase transition-all duration-300">
               <span>Solicitar Proyección Financiera</span>
               <span>→</span>
             </a>
@@ -713,14 +733,14 @@
         
         <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-16">
           <div class="space-y-3">
-            <span class="text-xs font-sans tracking-[0.3em] uppercase text-luxury-brass font-medium block">
+            <span class="text-xs font-sans tracking-[0.3em] uppercase text-champagne font-medium block">
               06 • Registro Arquitectónico
             </span>
-            <h2 class="font-serif text-3xl sm:text-5xl font-normal text-luxury-sand">
+            <h2 class="font-serif text-3xl sm:text-5xl font-normal text-travertine-100">
               Galería de Renders Oficiales
             </h2>
           </div>
-          <p class="text-xs font-mono text-luxury-muted uppercase tracking-widest">
+          <p class="text-xs font-mono text-travertine-muted uppercase tracking-widest">
             8 Vistas en Alta Definición
           </p>
         </div>
@@ -728,76 +748,76 @@
         <!-- Cuadrícula Asimétrica de Renders -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
           
-          <div class="group relative rounded-xl overflow-hidden hairline-border cursor-pointer h-52 sm:h-72" 
+          <div class="group relative rounded-xl overflow-hidden hairline-border cursor-pointer h-52 sm:h-72 bg-obsidian-900" 
                onclick="openLightbox('/public/images/project/Exterior-de-noche-2.jpg', 'Fachada Nocturna & Iluminación Rasante')">
             <img src="/public/images/project/Exterior-de-noche-2.webp" alt="Exterior Nocturno Elements Jarabacoa" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
             <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-              <span class="text-[11px] font-sans tracking-[0.2em] uppercase text-luxury-brass bg-luxury-base/80 px-4 py-2 rounded-full hairline-border">Inspeccionar</span>
+              <span class="text-[11px] font-sans tracking-[0.2em] uppercase text-champagne bg-obsidian-950/80 px-4 py-2 rounded-full hairline-border">Inspeccionar</span>
             </div>
-            <span class="absolute bottom-3 left-3 text-[10px] font-sans tracking-widest uppercase text-luxury-sand/80 bg-luxury-base/70 px-2.5 py-1 rounded">Exterior Noche</span>
+            <span class="absolute bottom-3 left-3 text-[10px] font-sans tracking-widest uppercase text-travertine-100/90 bg-obsidian-950/70 px-2.5 py-1 rounded">Exterior Noche</span>
           </div>
 
-          <div class="group relative rounded-xl overflow-hidden hairline-border cursor-pointer h-52 sm:h-72" 
+          <div class="group relative rounded-xl overflow-hidden hairline-border cursor-pointer h-52 sm:h-72 bg-obsidian-900" 
                onclick="openLightbox('/public/images/project/PJ03b.jpg', '8 Piscinas Climatizadas & Jacuzzis')">
             <img src="/public/images/project/PJ03b.webp" alt="Piscinas Climatizadas Elements Jarabacoa" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
             <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-              <span class="text-[11px] font-sans tracking-[0.2em] uppercase text-luxury-brass bg-luxury-base/80 px-4 py-2 rounded-full hairline-border">Inspeccionar</span>
+              <span class="text-[11px] font-sans tracking-[0.2em] uppercase text-champagne bg-obsidian-950/80 px-4 py-2 rounded-full hairline-border">Inspeccionar</span>
             </div>
-            <span class="absolute bottom-3 left-3 text-[10px] font-sans tracking-widest uppercase text-luxury-sand/80 bg-luxury-base/70 px-2.5 py-1 rounded">Piscinas & Decks</span>
+            <span class="absolute bottom-3 left-3 text-[10px] font-sans tracking-widest uppercase text-travertine-100/90 bg-obsidian-950/70 px-2.5 py-1 rounded">Piscinas & Decks</span>
           </div>
 
-          <div class="group relative rounded-xl overflow-hidden hairline-border cursor-pointer h-52 sm:h-72" 
+          <div class="group relative rounded-xl overflow-hidden hairline-border cursor-pointer h-52 sm:h-72 bg-obsidian-900" 
                onclick="openLightbox('/public/images/project/E03-3.jpg', 'Paisajismo & Fachada Diurna')">
             <img src="/public/images/project/E03-3.webp" alt="Fachada Día Elements Jarabacoa" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
             <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-              <span class="text-[11px] font-sans tracking-[0.2em] uppercase text-luxury-brass bg-luxury-base/80 px-4 py-2 rounded-full hairline-border">Inspeccionar</span>
+              <span class="text-[11px] font-sans tracking-[0.2em] uppercase text-champagne bg-obsidian-950/80 px-4 py-2 rounded-full hairline-border">Inspeccionar</span>
             </div>
-            <span class="absolute bottom-3 left-3 text-[10px] font-sans tracking-widest uppercase text-luxury-sand/80 bg-luxury-base/70 px-2.5 py-1 rounded">Fachada Diurna</span>
+            <span class="absolute bottom-3 left-3 text-[10px] font-sans tracking-widest uppercase text-travertine-100/90 bg-obsidian-950/70 px-2.5 py-1 rounded">Fachada Diurna</span>
           </div>
 
-          <div class="group relative rounded-xl overflow-hidden hairline-border cursor-pointer h-52 sm:h-72" 
+          <div class="group relative rounded-xl overflow-hidden hairline-border cursor-pointer h-52 sm:h-72 bg-obsidian-900" 
                onclick="openLightbox('/public/images/project/L01a.jpg', 'Salón Principal con Ventanales Panorámicos')">
             <img src="/public/images/project/L01a.webp" alt="Sala Principal Elements Jarabacoa" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
             <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-              <span class="text-[11px] font-sans tracking-[0.2em] uppercase text-luxury-brass bg-luxury-base/80 px-4 py-2 rounded-full hairline-border">Inspeccionar</span>
+              <span class="text-[11px] font-sans tracking-[0.2em] uppercase text-champagne bg-obsidian-950/80 px-4 py-2 rounded-full hairline-border">Inspeccionar</span>
             </div>
-            <span class="absolute bottom-3 left-3 text-[10px] font-sans tracking-widest uppercase text-luxury-sand/80 bg-luxury-base/70 px-2.5 py-1 rounded">Salón Principal</span>
+            <span class="absolute bottom-3 left-3 text-[10px] font-sans tracking-widest uppercase text-travertine-100/90 bg-obsidian-950/70 px-2.5 py-1 rounded">Salón Principal</span>
           </div>
 
-          <div class="group relative rounded-xl overflow-hidden hairline-border cursor-pointer h-52 sm:h-72" 
+          <div class="group relative rounded-xl overflow-hidden hairline-border cursor-pointer h-52 sm:h-72 bg-obsidian-900" 
                onclick="openLightbox('/public/images/project/L01b.jpg', 'Cocina Modular & Comedor Integrado')">
             <img src="/public/images/project/L01b.webp" alt="Cocina Whirlpool Elements Jarabacoa" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
             <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-              <span class="text-[11px] font-sans tracking-[0.2em] uppercase text-luxury-brass bg-luxury-base/80 px-4 py-2 rounded-full hairline-border">Inspeccionar</span>
+              <span class="text-[11px] font-sans tracking-[0.2em] uppercase text-champagne bg-obsidian-950/80 px-4 py-2 rounded-full hairline-border">Inspeccionar</span>
             </div>
-            <span class="absolute bottom-3 left-3 text-[10px] font-sans tracking-widest uppercase text-luxury-sand/80 bg-luxury-base/70 px-2.5 py-1 rounded">Cocina Modular</span>
+            <span class="absolute bottom-3 left-3 text-[10px] font-sans tracking-widest uppercase text-travertine-100/90 bg-obsidian-950/70 px-2.5 py-1 rounded">Cocina Modular</span>
           </div>
 
-          <div class="group relative rounded-xl overflow-hidden hairline-border cursor-pointer h-52 sm:h-72" 
+          <div class="group relative rounded-xl overflow-hidden hairline-border cursor-pointer h-52 sm:h-72 bg-obsidian-900" 
                onclick="openLightbox('/public/images/project/L02a.jpg', 'Loft Contemporáneo Tipología B')">
             <img src="/public/images/project/L02a.webp" alt="Loft Tipo B Elements Jarabacoa" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
             <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-              <span class="text-[11px] font-sans tracking-[0.2em] uppercase text-luxury-brass bg-luxury-base/80 px-4 py-2 rounded-full hairline-border">Inspeccionar</span>
+              <span class="text-[11px] font-sans tracking-[0.2em] uppercase text-champagne bg-obsidian-950/80 px-4 py-2 rounded-full hairline-border">Inspeccionar</span>
             </div>
-            <span class="absolute bottom-3 left-3 text-[10px] font-sans tracking-widest uppercase text-luxury-sand/80 bg-luxury-base/70 px-2.5 py-1 rounded">Loft Tipología B</span>
+            <span class="absolute bottom-3 left-3 text-[10px] font-sans tracking-widest uppercase text-travertine-100/90 bg-obsidian-950/70 px-2.5 py-1 rounded">Loft Tipología B</span>
           </div>
 
-          <div class="group relative rounded-xl overflow-hidden hairline-border cursor-pointer h-52 sm:h-72" 
+          <div class="group relative rounded-xl overflow-hidden hairline-border cursor-pointer h-52 sm:h-72 bg-obsidian-900" 
                onclick="openLightbox('/public/images/project/B01.jpg', 'Dormitorio Suite con Iluminación Indirecta')">
             <img src="/public/images/project/B01.webp" alt="Habitación Suite Elements Jarabacoa" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
             <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-              <span class="text-[11px] font-sans tracking-[0.2em] uppercase text-luxury-brass bg-luxury-base/80 px-4 py-2 rounded-full hairline-border">Inspeccionar</span>
+              <span class="text-[11px] font-sans tracking-[0.2em] uppercase text-champagne bg-obsidian-950/80 px-4 py-2 rounded-full hairline-border">Inspeccionar</span>
             </div>
-            <span class="absolute bottom-3 left-3 text-[10px] font-sans tracking-widest uppercase text-luxury-sand/80 bg-luxury-base/70 px-2.5 py-1 rounded">Dormitorio Master</span>
+            <span class="absolute bottom-3 left-3 text-[10px] font-sans tracking-widest uppercase text-travertine-100/90 bg-obsidian-950/70 px-2.5 py-1 rounded">Dormitorio Master</span>
           </div>
 
-          <div class="group relative rounded-xl overflow-hidden hairline-border cursor-pointer h-52 sm:h-72" 
+          <div class="group relative rounded-xl overflow-hidden hairline-border cursor-pointer h-52 sm:h-72 bg-obsidian-900" 
                onclick="openLightbox('/public/images/project/BA01.jpg', 'Baño de Lujo con Grifería de Vanguardia')">
             <img src="/public/images/project/BA01.webp" alt="Baño de Lujo Elements Jarabacoa" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
             <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-              <span class="text-[11px] font-sans tracking-[0.2em] uppercase text-luxury-brass bg-luxury-base/80 px-4 py-2 rounded-full hairline-border">Inspeccionar</span>
+              <span class="text-[11px] font-sans tracking-[0.2em] uppercase text-champagne bg-obsidian-950/80 px-4 py-2 rounded-full hairline-border">Inspeccionar</span>
             </div>
-            <span class="absolute bottom-3 left-3 text-[10px] font-sans tracking-widest uppercase text-luxury-sand/80 bg-luxury-base/70 px-2.5 py-1 rounded">Baño Tipo Spa</span>
+            <span class="absolute bottom-3 left-3 text-[10px] font-sans tracking-widest uppercase text-travertine-100/90 bg-obsidian-950/70 px-2.5 py-1 rounded">Baño Tipo Spa</span>
           </div>
 
         </div>
@@ -805,11 +825,11 @@
       </section>
 
       <!-- Lightbox Modal HD -->
-      <div id="lightboxModal" class="fixed inset-0 z-50 bg-luxury-base/95 backdrop-blur-xl hidden items-center justify-center p-4 sm:p-8" onclick="closeLightbox()">
+      <div id="lightboxModal" class="fixed inset-0 z-50 bg-obsidian-950/95 backdrop-blur-xl hidden items-center justify-center p-4 sm:p-8" onclick="closeLightbox()">
         <div class="relative max-w-6xl w-full" onclick="event.stopPropagation()">
-          <button onclick="closeLightbox()" class="absolute -top-12 right-0 text-luxury-sand hover:text-luxury-brass text-2xl font-light">✕ Cerrar</button>
+          <button onclick="closeLightbox()" class="absolute -top-12 right-0 text-travertine-100 hover:text-champagne text-2xl font-light">✕ Cerrar</button>
           <img id="lightboxImg" src="" alt="Vista en Alta Definición" class="w-full max-h-[82vh] object-contain rounded-xl hairline-border shadow-2xl" />
-          <div id="lightboxCaption" class="text-center font-serif italic text-sm text-luxury-brass mt-4"></div>
+          <div id="lightboxCaption" class="text-center font-serif italic text-sm text-champagne mt-4"></div>
         </div>
       </div>
 
@@ -822,13 +842,13 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
           
           <div class="lg:col-span-5 space-y-6">
-            <span class="text-xs font-sans tracking-[0.3em] uppercase text-luxury-brass font-medium block">
+            <span class="text-xs font-sans tracking-[0.3em] uppercase text-champagne font-medium block">
               07 • Entorno Geográfico
             </span>
-            <h2 class="font-serif text-3xl sm:text-5xl font-normal text-luxury-sand leading-tight">
+            <h2 class="font-serif text-3xl sm:text-5xl font-normal text-travertine-100 leading-tight">
               Ubicación de alta plusvalía en Jamaca de Dios.
             </h2>
-            <p class="text-sm text-luxury-muted font-light leading-relaxed">
+            <p class="text-sm text-travertine-muted font-light leading-relaxed">
               Jarabacoa es la capital del ecoturismo dominicano. Su acceso pavimentado y cercanía a centros gastronómicos de renombre aseguran comodidad y una valorización sostenida de la inversión.
             </p>
           </div>
@@ -836,28 +856,28 @@
           <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-8">
             
             <!-- Gastronomía & Lifestyle -->
-            <div class="p-8 rounded-2xl bg-luxury-surface/40 hairline-border space-y-4">
-              <h4 class="font-serif text-lg text-luxury-sand">Gastronomía & Entretenimiento</h4>
-              <ul class="space-y-3 text-xs text-luxury-muted divide-y divide-white/[0.06]">
-                <li class="pt-2 flex justify-between"><span>Eco Parapentes RD</span> <span class="font-mono text-luxury-sand font-medium">4 mins</span></li>
-                <li class="pt-2 flex justify-between"><span>Restaurante Jamaca de Dios</span> <span class="font-mono text-luxury-sand font-medium">6 mins</span></li>
-                <li class="pt-2 flex justify-between"><span>Café Colao</span> <span class="font-mono text-luxury-sand font-medium">7 mins</span></li>
-                <li class="pt-2 flex justify-between"><span>El Fresco Restaurant</span> <span class="font-mono text-luxury-sand font-medium">7 mins</span></li>
-                <li class="pt-2 flex justify-between"><span>Helados Ivón</span> <span class="font-mono text-luxury-sand font-medium">7 mins</span></li>
-                <li class="pt-2 flex justify-between"><span>Jarabacoa Golf Club</span> <span class="font-mono text-luxury-sand font-medium">19 mins</span></li>
+            <div class="p-8 rounded-2xl bg-obsidian-900/60 hairline-border space-y-4">
+              <h4 class="font-serif text-lg text-travertine-100">Gastronomía & Entretenimiento</h4>
+              <ul class="space-y-3 text-xs text-travertine-muted divide-y divide-white/[0.06]">
+                <li class="pt-2 flex justify-between"><span>Eco Parapentes RD</span> <span class="font-mono text-travertine-100 font-medium">4 mins</span></li>
+                <li class="pt-2 flex justify-between"><span>Restaurante Jamaca de Dios</span> <span class="font-mono text-travertine-100 font-medium">6 mins</span></li>
+                <li class="pt-2 flex justify-between"><span>Café Colao</span> <span class="font-mono text-travertine-100 font-medium">7 mins</span></li>
+                <li class="pt-2 flex justify-between"><span>El Fresco Restaurant</span> <span class="font-mono text-travertine-100 font-medium">7 mins</span></li>
+                <li class="pt-2 flex justify-between"><span>Helados Ivón</span> <span class="font-mono text-travertine-100 font-medium">7 mins</span></li>
+                <li class="pt-2 flex justify-between"><span>Jarabacoa Golf Club</span> <span class="font-mono text-travertine-100 font-medium">19 mins</span></li>
               </ul>
             </div>
 
             <!-- Naturaleza & Aventura -->
-            <div class="p-8 rounded-2xl bg-luxury-surface/40 hairline-border space-y-4">
-              <h4 class="font-serif text-lg text-luxury-sand">Naturaleza & Ecoturismo</h4>
-              <ul class="space-y-3 text-xs text-luxury-muted divide-y divide-white/[0.06]">
-                <li class="pt-2 flex justify-between"><span>Salto Baiguate</span> <span class="font-mono text-luxury-sand font-medium">9 mins</span></li>
-                <li class="pt-2 flex justify-between"><span>Jarabacoa Eco Adventures</span> <span class="font-mono text-luxury-sand font-medium">10 mins</span></li>
-                <li class="pt-2 flex justify-between"><span>Río Yaque del Norte</span> <span class="font-mono text-luxury-sand font-medium">12 mins</span></li>
-                <li class="pt-2 flex justify-between"><span>La Confluencia</span> <span class="font-mono text-luxury-sand font-medium">13 mins</span></li>
-                <li class="pt-2 flex justify-between"><span>Las Guázaras</span> <span class="font-mono text-luxury-sand font-medium">13 mins</span></li>
-                <li class="pt-2 flex justify-between"><span>Salto Jimenoa</span> <span class="font-mono text-luxury-sand font-medium">27 mins</span></li>
+            <div class="p-8 rounded-2xl bg-obsidian-900/60 hairline-border space-y-4">
+              <h4 class="font-serif text-lg text-travertine-100">Naturaleza & Ecoturismo</h4>
+              <ul class="space-y-3 text-xs text-travertine-muted divide-y divide-white/[0.06]">
+                <li class="pt-2 flex justify-between"><span>Salto Baiguate</span> <span class="font-mono text-travertine-100 font-medium">9 mins</span></li>
+                <li class="pt-2 flex justify-between"><span>Jarabacoa Eco Adventures</span> <span class="font-mono text-travertine-100 font-medium">10 mins</span></li>
+                <li class="pt-2 flex justify-between"><span>Río Yaque del Norte</span> <span class="font-mono text-travertine-100 font-medium">12 mins</span></li>
+                <li class="pt-2 flex justify-between"><span>La Confluencia</span> <span class="font-mono text-travertine-100 font-medium">13 mins</span></li>
+                <li class="pt-2 flex justify-between"><span>Las Guázaras</span> <span class="font-mono text-travertine-100 font-medium">13 mins</span></li>
+                <li class="pt-2 flex justify-between"><span>Salto Jimenoa</span> <span class="font-mono text-travertine-100 font-medium">27 mins</span></li>
               </ul>
             </div>
 
@@ -871,39 +891,39 @@
            CONTACTO: ASESORÍA PRIVADA & OFICIAL
            Howard Luna • Alveare Realty
            ======================================================== -->
-      <section class="py-32 bg-luxury-base">
+      <section class="py-32 bg-obsidian-950">
         <div class="max-w-4xl mx-auto px-6 sm:px-8 text-center space-y-10">
           
           <img src="/public/images/project/logo-elements.png" 
                alt="Elements Jarabacoa" 
                class="h-14 w-auto mx-auto object-contain opacity-90" />
 
-          <h2 class="font-serif text-3xl sm:text-5xl font-normal text-luxury-sand leading-tight">
+          <h2 class="font-serif text-3xl sm:text-5xl font-normal text-travertine-100 leading-tight">
             Reserve su residencia en <br/>
-            <span class="italic font-light brass-gradient-text">Elements Jarabacoa</span>
+            <span class="italic font-light champagne-gradient-text">Elements Jarabacoa</span>
           </h2>
 
-          <p class="text-sm sm:text-base text-luxury-muted font-light max-w-xl mx-auto leading-relaxed">
-            Asesoría comercial personalizada a cargo de <strong class="text-luxury-sand font-medium">Howard Luna (Alveare Realty)</strong>. Conozca las unidades disponibles y los planes de pago preferenciales en etapa de preventa.
+          <p class="text-sm sm:text-base text-travertine-muted font-light max-w-xl mx-auto leading-relaxed">
+            Asesoría comercial personalizada a cargo de <strong class="text-travertine-100 font-medium">Howard Luna (Alveare Realty)</strong>. Conozca las unidades disponibles y los planes de pago preferenciales en etapa de preventa.
           </p>
 
-          <div class="p-8 sm:p-10 rounded-2xl bg-luxury-surface/50 hairline-border max-w-lg mx-auto space-y-5 text-left text-xs font-light text-luxury-muted">
+          <div class="p-8 sm:p-10 rounded-2xl bg-obsidian-900/60 hairline-border max-w-lg mx-auto space-y-5 text-left text-xs font-light text-travertine-muted">
             <div class="space-y-2">
               <div class="flex items-center justify-between py-1 border-b border-white/[0.06]">
                 <span class="uppercase tracking-widest text-[10px]">Ubicación</span>
-                <span class="text-luxury-sand font-medium">Jamaca de Dios, Jarabacoa</span>
+                <span class="text-travertine-100 font-medium">Jamaca de Dios, Jarabacoa</span>
               </div>
               <div class="flex items-center justify-between py-1 border-b border-white/[0.06]">
                 <span class="uppercase tracking-widest text-[10px]">Asesor</span>
-                <span class="text-luxury-sand font-medium">Howard Luna • Alveare</span>
+                <span class="text-travertine-100 font-medium">Howard Luna • Alveare</span>
               </div>
               <div class="flex items-center justify-between py-1 border-b border-white/[0.06]">
                 <span class="uppercase tracking-widest text-[10px]">Contacto</span>
-                <span class="text-luxury-sand font-medium">+1 (829) 455-4783</span>
+                <span class="text-travertine-100 font-medium">+1 (829) 455-4783</span>
               </div>
               <div class="flex items-center justify-between py-1 border-b border-white/[0.06]">
                 <span class="uppercase tracking-widest text-[10px]">Email</span>
-                <span class="text-luxury-sand font-medium">Howard@Alveare.do</span>
+                <span class="text-travertine-100 font-medium">Howard@Alveare.do</span>
               </div>
             </div>
 
@@ -911,14 +931,14 @@
               <a href="https://wa.me/18294554783?text=Hola%20Howard,%20estoy%20interesado%20en%20reservar%20una%20unidad%20en%20Elements%20Jarabacoa" 
                  target="_blank"
                  rel="noopener noreferrer"
-                 class="w-full py-4 rounded-full brass-button text-luxury-base font-semibold text-xs tracking-[0.16em] uppercase flex items-center justify-center gap-2 transition-all duration-300">
+                 class="w-full py-4 rounded-full champagne-button text-obsidian-950 font-semibold text-xs tracking-[0.16em] uppercase flex items-center justify-center gap-2 transition-all duration-300">
                 <span>Contactar a Howard Luna vía WhatsApp</span>
                 <span>→</span>
               </a>
             </div>
           </div>
 
-          <div class="text-[11px] text-luxury-muted/60 tracking-widest uppercase font-sans pt-6">
+          <div class="text-[11px] text-travertine-muted/60 tracking-widest uppercase font-sans pt-6">
             Comercialización Oficial: Alveare Realty • Arquitectura Web: ISAPromoRD
           </div>
 
@@ -933,14 +953,22 @@
          target="_blank" 
          rel="noopener noreferrer" 
          title="Atención privada por WhatsApp con Howard Luna"
-         class="fixed bottom-6 right-6 z-50 flex items-center gap-2.5 px-5 py-3 rounded-full bg-luxury-surface/90 hover:bg-luxury-surface text-luxury-sand backdrop-blur-md hairline-border shadow-2xl transition-all duration-300 hover:scale-105 group">
-        <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-        <span class="text-xs font-medium tracking-[0.15em] uppercase text-luxury-brass group-hover:text-luxury-brassHover">Concierge WhatsApp</span>
+         class="fixed bottom-6 right-6 z-50 flex items-center gap-2.5 px-5 py-3 rounded-full bg-obsidian-900/90 hover:bg-obsidian-850 text-travertine-100 backdrop-blur-md hairline-border shadow-2xl transition-all duration-300 hover:scale-105 group">
+        <span class="w-2 h-2 rounded-full bg-champagne"></span>
+        <span class="text-xs font-medium tracking-[0.15em] uppercase text-champagne group-hover:text-champagne-light">Concierge WhatsApp</span>
       </a>
     </aside>
 
-    <!-- Script Lightbox Modal HD -->
+    <!-- Scripts: Lightbox Modal HD & Video 1.35x Speed Optimization -->
     <script>
+      // Ajuste de velocidad del video a 1.35x para dinamismo y fluidez
+      document.addEventListener('DOMContentLoaded', function() {
+        var video = document.getElementById('heroVideo');
+        if (video) {
+          video.playbackRate = 1.35;
+        }
+      });
+
       function openLightbox(src, caption) {
         var modal = document.getElementById('lightboxModal');
         var img = document.getElementById('lightboxImg');
