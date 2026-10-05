@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Motores de Inteligencia Artificial Autorizados
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://elementsjarabacoa.com.do/sitemap.xml
